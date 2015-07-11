@@ -1,18 +1,13 @@
-function y = ramp (len,f)
+function data = ramp (lenS)
 
-more off;
+  more off;
 
-#disp('starting');
+freq1=20;
+freq2=20E3;
+fs=96E3;
+t=1/fs:1/fs:lenS; %
+f=freq1:(freq2-freq1)/length(t):freq2-(freq2-freq1)/length(t); 
 
+data=sin(2*pi*f.*t);
 
-fs = 96E3;
-srate = 1/fs;
-
-A = 1;
-#f = 20;
-
-t = 0:srate:len;
-
-
-y = A*sin(2*pi*f*t);
-#plot(y)
+end
