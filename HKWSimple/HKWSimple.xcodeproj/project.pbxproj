@@ -18,6 +18,10 @@
 		1785A1621B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
 		17E2C5211B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */; };
 		17E5B8841B52438B00F2BD25 /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E5B8831B52438B00F2BD25 /* AudioProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		17E5B8891B52526E00F2BD25 /* 15hz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E5B8851B52526E00F2BD25 /* 15hz.mp3 */; };
+		17E5B88A1B52526E00F2BD25 /* 20hz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E5B8861B52526E00F2BD25 /* 20hz.mp3 */; };
+		17E5B88B1B52526E00F2BD25 /* fast-sweep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E5B8871B52526E00F2BD25 /* fast-sweep.mp3 */; };
+		17E5B88C1B52526E00F2BD25 /* slow-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E5B8881B52526E00F2BD25 /* slow-long.mp3 */; };
 		76D40DD31B4E4AEE003904D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D40DD21B4E4AEE003904D2 /* AppDelegate.swift */; };
 		76D40DD51B4E4AEE003904D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D40DD41B4E4AEE003904D2 /* ViewController.swift */; };
 		76D40DD81B4E4AEE003904D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D40DD61B4E4AEE003904D2 /* Main.storyboard */; };
@@ -56,6 +60,10 @@
 		17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1808861_Everyday_Netsky_Remix.mp3; sourceTree = "<group>"; };
 		17E5B8821B52438B00F2BD25 /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioProcessor.h; sourceTree = "<group>"; };
 		17E5B8831B52438B00F2BD25 /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioProcessor.m; sourceTree = "<group>"; };
+		17E5B8851B52526E00F2BD25 /* 15hz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15hz.mp3; sourceTree = "<group>"; };
+		17E5B8861B52526E00F2BD25 /* 20hz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 20hz.mp3; sourceTree = "<group>"; };
+		17E5B8871B52526E00F2BD25 /* fast-sweep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fast-sweep.mp3"; sourceTree = "<group>"; };
+		17E5B8881B52526E00F2BD25 /* slow-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "slow-long.mp3"; sourceTree = "<group>"; };
 		76D40DCD1B4E4AEE003904D2 /* HKWSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKWSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D40DD11B4E4AEE003904D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D40DD21B4E4AEE003904D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +150,10 @@
 			isa = PBXGroup;
 			children = (
 				17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */,
+				17E5B8851B52526E00F2BD25 /* 15hz.mp3 */,
+				17E5B8861B52526E00F2BD25 /* 20hz.mp3 */,
+				17E5B8871B52526E00F2BD25 /* fast-sweep.mp3 */,
+				17E5B8881B52526E00F2BD25 /* slow-long.mp3 */,
 				76D40DFD1B4E4BA1003904D2 /* HKWirelessHDSDK */,
 				76D40DD21B4E4AEE003904D2 /* AppDelegate.swift */,
 				76D40DF21B4E4B86003904D2 /* GlobalConstants.swift */,
@@ -296,10 +308,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E5B8891B52526E00F2BD25 /* 15hz.mp3 in Resources */,
 				17E2C5211B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 in Resources */,
 				76D40DD81B4E4AEE003904D2 /* Main.storyboard in Resources */,
+				17E5B88B1B52526E00F2BD25 /* fast-sweep.mp3 in Resources */,
 				1785A1611B52288100356858 /* EZAudio in Resources */,
+				17E5B88A1B52526E00F2BD25 /* 20hz.mp3 in Resources */,
 				76D40DDD1B4E4AEE003904D2 /* LaunchScreen.xib in Resources */,
+				17E5B88C1B52526E00F2BD25 /* slow-long.mp3 in Resources */,
 				76D40DDA1B4E4AEE003904D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
