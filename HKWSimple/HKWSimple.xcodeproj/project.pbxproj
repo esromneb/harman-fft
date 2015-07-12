@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171A829C1B53160600A787B2 /* whitenoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 171A829B1B53160600A787B2 /* whitenoise.mp3 */; };
 		1785A1511B52276C00356858 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1501B52276C00356858 /* AVFoundation.framework */; };
 		1785A1531B52277400356858 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1521B52277400356858 /* Accelerate.framework */; };
 		1785A1551B52278000356858 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1541B52278000356858 /* GLKit.framework */; };
@@ -20,13 +21,13 @@
 		179D0BE01B52E57D00BC286F /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 179D0BDF1B52E57D00BC286F /* logo@2x.png */; };
 		179D0BE31B52ECF300BC286F /* 12-80-repeat-square.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 179D0BE11B52ECF300BC286F /* 12-80-repeat-square.mp3 */; };
 		179D0BE41B52ECF400BC286F /* 12-80-repeat-sin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 179D0BE21B52ECF300BC286F /* 12-80-repeat-sin.mp3 */; };
-		179D0BE61B52F9F400BC286F /* little-piggy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 179D0BE51B52F9F400BC286F /* little-piggy.mp3 */; };
-		179D0BE81B52FA1D00BC286F /* 2072007_Rendezvous_Original_Mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 179D0BE71B52FA1D00BC286F /* 2072007_Rendezvous_Original_Mix.mp3 */; };
 		17B80CA51B5287FB0054EFA1 /* FunctionPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CA41B5287FB0054EFA1 /* FunctionPlot.m */; };
 		17B80CA61B5288370054EFA1 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B80CA01B52874F0054EFA1 /* libCorePlot-CocoaTouch.a */; };
 		17B80CAD1B5288610054EFA1 /* PiNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CA81B5288610054EFA1 /* PiNumberFormatter.m */; };
 		17B80CAE1B5288610054EFA1 /* PlotGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CAA1B5288610054EFA1 /* PlotGallery.m */; };
 		17B80CAF1B5288610054EFA1 /* PlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CAC1B5288610054EFA1 /* PlotItem.m */; };
+		17C2CEED1B53093B006EB863 /* 2072007_Rendezvous_Original_Mix-mon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17C2CEEB1B53093B006EB863 /* 2072007_Rendezvous_Original_Mix-mon.mp3 */; };
+		17C2CEEE1B53093B006EB863 /* cartman-piggy-mono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17C2CEEC1B53093B006EB863 /* cartman-piggy-mono.mp3 */; };
 		17E5B8841B52438B00F2BD25 /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E5B8831B52438B00F2BD25 /* AudioProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		17E5B8891B52526E00F2BD25 /* 15hz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E5B8851B52526E00F2BD25 /* 15hz.mp3 */; };
 		17E5B88A1B52526E00F2BD25 /* 20hz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E5B8861B52526E00F2BD25 /* 20hz.mp3 */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171A829B1B53160600A787B2 /* whitenoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whitenoise.mp3; sourceTree = "<group>"; };
 		1785A1501B52276C00356858 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1785A1521B52277400356858 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		1785A1541B52278000356858 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -85,8 +87,6 @@
 		179D0BDF1B52E57D00BC286F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		179D0BE11B52ECF300BC286F /* 12-80-repeat-square.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12-80-repeat-square.mp3"; sourceTree = "<group>"; };
 		179D0BE21B52ECF300BC286F /* 12-80-repeat-sin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12-80-repeat-sin.mp3"; sourceTree = "<group>"; };
-		179D0BE51B52F9F400BC286F /* little-piggy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "little-piggy.mp3"; sourceTree = "<group>"; };
-		179D0BE71B52FA1D00BC286F /* 2072007_Rendezvous_Original_Mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2072007_Rendezvous_Original_Mix.mp3; sourceTree = "<group>"; };
 		17B80C991B52874E0054EFA1 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
 		17B80CA31B5287FB0054EFA1 /* FunctionPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionPlot.h; sourceTree = "<group>"; };
 		17B80CA41B5287FB0054EFA1 /* FunctionPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionPlot.m; sourceTree = "<group>"; };
@@ -96,6 +96,8 @@
 		17B80CAA1B5288610054EFA1 /* PlotGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotGallery.m; sourceTree = "<group>"; };
 		17B80CAB1B5288610054EFA1 /* PlotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotItem.h; sourceTree = "<group>"; };
 		17B80CAC1B5288610054EFA1 /* PlotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotItem.m; sourceTree = "<group>"; };
+		17C2CEEB1B53093B006EB863 /* 2072007_Rendezvous_Original_Mix-mon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2072007_Rendezvous_Original_Mix-mon.mp3"; sourceTree = "<group>"; };
+		17C2CEEC1B53093B006EB863 /* cartman-piggy-mono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cartman-piggy-mono.mp3"; sourceTree = "<group>"; };
 		17E5B8821B52438B00F2BD25 /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioProcessor.h; sourceTree = "<group>"; };
 		17E5B8831B52438B00F2BD25 /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioProcessor.m; sourceTree = "<group>"; };
 		17E5B8851B52526E00F2BD25 /* 15hz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15hz.mp3; sourceTree = "<group>"; };
@@ -197,13 +199,14 @@
 		76D40DCF1B4E4AEE003904D2 /* HKWSimple */ = {
 			isa = PBXGroup;
 			children = (
-				179D0BE51B52F9F400BC286F /* little-piggy.mp3 */,
 				179D0BDF1B52E57D00BC286F /* logo@2x.png */,
+				171A829B1B53160600A787B2 /* whitenoise.mp3 */,
+				17C2CEEB1B53093B006EB863 /* 2072007_Rendezvous_Original_Mix-mon.mp3 */,
+				17C2CEEC1B53093B006EB863 /* cartman-piggy-mono.mp3 */,
 				179D0BD61B529BC600BC286F /* index.html */,
 				179D0BE11B52ECF300BC286F /* 12-80-repeat-square.mp3 */,
 				179D0BE21B52ECF300BC286F /* 12-80-repeat-sin.mp3 */,
 				17E5B8851B52526E00F2BD25 /* 15hz.mp3 */,
-				179D0BE71B52FA1D00BC286F /* 2072007_Rendezvous_Original_Mix.mp3 */,
 				17E5B8861B52526E00F2BD25 /* 20hz.mp3 */,
 				17E5B8871B52526E00F2BD25 /* fast-sweep.mp3 */,
 				17E5B8881B52526E00F2BD25 /* 10-2000-hz.mp3 */,
@@ -387,17 +390,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E5B8891B52526E00F2BD25 /* 15hz.mp3 in Resources */,
+				17C2CEED1B53093B006EB863 /* 2072007_Rendezvous_Original_Mix-mon.mp3 in Resources */,
 				76D40DD81B4E4AEE003904D2 /* Main.storyboard in Resources */,
 				179D0BD71B529BC600BC286F /* index.html in Resources */,
 				17E5B88B1B52526E00F2BD25 /* fast-sweep.mp3 in Resources */,
+				17C2CEEE1B53093B006EB863 /* cartman-piggy-mono.mp3 in Resources */,
 				179D0BE31B52ECF300BC286F /* 12-80-repeat-square.mp3 in Resources */,
 				1785A1611B52288100356858 /* EZAudio in Resources */,
 				17E5B88A1B52526E00F2BD25 /* 20hz.mp3 in Resources */,
 				76D40DDD1B4E4AEE003904D2 /* LaunchScreen.xib in Resources */,
-				179D0BE81B52FA1D00BC286F /* 2072007_Rendezvous_Original_Mix.mp3 in Resources */,
+				171A829C1B53160600A787B2 /* whitenoise.mp3 in Resources */,
 				179D0BE01B52E57D00BC286F /* logo@2x.png in Resources */,
 				17E5B88C1B52526E00F2BD25 /* 10-2000-hz.mp3 in Resources */,
-				179D0BE61B52F9F400BC286F /* little-piggy.mp3 in Resources */,
 				76D40DDA1B4E4AEE003904D2 /* Images.xcassets in Resources */,
 				179D0BE41B52ECF400BC286F /* 12-80-repeat-sin.mp3 in Resources */,
 			);
