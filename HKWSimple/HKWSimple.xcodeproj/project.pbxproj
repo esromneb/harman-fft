@@ -16,6 +16,7 @@
 		1785A15D1B5227D500356858 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A15C1B5227D500356858 /* CoreGraphics.framework */; };
 		1785A1611B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
 		1785A1621B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
+		179D0BD71B529BC600BC286F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 179D0BD61B529BC600BC286F /* index.html */; };
 		17B80CA51B5287FB0054EFA1 /* FunctionPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CA41B5287FB0054EFA1 /* FunctionPlot.m */; };
 		17B80CA61B5288370054EFA1 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B80CA01B52874F0054EFA1 /* libCorePlot-CocoaTouch.a */; };
 		17B80CAD1B5288610054EFA1 /* PiNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CA81B5288610054EFA1 /* PiNumberFormatter.m */; };
@@ -79,6 +80,7 @@
 		1785A15A1B5227B800356858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1785A15C1B5227D500356858 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1785A1601B52288100356858 /* EZAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EZAudio; path = HKWSimple/EZAudio; sourceTree = "<group>"; };
+		179D0BD61B529BC600BC286F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../index.html; sourceTree = "<group>"; };
 		17B80C991B52874E0054EFA1 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
 		17B80CA31B5287FB0054EFA1 /* FunctionPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionPlot.h; sourceTree = "<group>"; };
 		17B80CA41B5287FB0054EFA1 /* FunctionPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionPlot.m; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		76D40DCF1B4E4AEE003904D2 /* HKWSimple */ = {
 			isa = PBXGroup;
 			children = (
+				179D0BD61B529BC600BC286F /* index.html */,
 				17DBE05C1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 */,
 				17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */,
 				17DBE05E1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 */,
@@ -383,6 +386,7 @@
 				17E5B8891B52526E00F2BD25 /* 15hz.mp3 in Resources */,
 				17E2C5211B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 in Resources */,
 				76D40DD81B4E4AEE003904D2 /* Main.storyboard in Resources */,
+				179D0BD71B529BC600BC286F /* index.html in Resources */,
 				17E5B88B1B52526E00F2BD25 /* fast-sweep.mp3 in Resources */,
 				1785A1611B52288100356858 /* EZAudio in Resources */,
 				17E5B88A1B52526E00F2BD25 /* 20hz.mp3 in Resources */,

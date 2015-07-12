@@ -261,6 +261,10 @@
                                     <action selector="runMic:" destination="b2s-ay-GOh" eventType="touchUpInside" id="kTg-Mp-VaX"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfs-ds-DG9">
+                                <rect key="frame" x="8" y="10" width="295" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -290,6 +294,7 @@
                         <outlet property="labelAverageVolume" destination="JIY-wG-6s3" id="iZD-xy-QQb"/>
                         <outlet property="labelSongTitle" destination="gqZ-Hm-vF1" id="kLH-wo-2Fh"/>
                         <outlet property="labelStatus" destination="ygG-Mf-kes" id="CRw-w0-LyI"/>
+                        <outlet property="webView" destination="wfs-ds-DG9" id="toq-TC-RkS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6b-24-0b6" userLabel="First Responder" sceneMemberID="firstResponder"/>

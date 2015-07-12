@@ -31,6 +31,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     @IBOutlet var btnVolumeDown: UIButton!
     @IBOutlet var btnVolumeUp: UIButton!
     @IBOutlet var labelStatus: UILabel!
+    @IBOutlet var webView: UIWebView!
     
     @IBAction func playOrStop(sender: UIButton) {
         if HKWControlHandler.sharedInstance().isPlaying() {
@@ -109,6 +110,12 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
                 labelStatus.text = "Play Stopped"
             }
         }
+        
+        
+        let localfilePath = NSBundle.mainBundle().URLForResource("index", withExtension: "html");
+        let myRequest = NSURLRequest(URL: localfilePath!);
+        webView.loadRequest(myRequest);
+        
         
     }
 
