@@ -82,7 +82,18 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
 //        let aCount:Int = Int(sentData["count"] as NSNumber)
         
 //        webView!.evaluateJavaScript("upd([1,2,3] )", completionHandler: nil)
-        webView.stringByEvaluatingJavaScriptFromString("window.upd([1,2,3] )")
+
+        
+        var string = "window.upd(["
+        for var i = 0; i < 512; ++i {
+            let fs = String(format: "%f,",ai.mags[i])
+            string += fs
+        }
+        
+        string += "0])"
+        
+        
+                webView.stringByEvaluatingJavaScriptFromString(string)
         
         
     }

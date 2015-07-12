@@ -4,15 +4,17 @@
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
 <script>
-var ch;
+var chart;
 function upd(d)
 {
-    // console.log(d);
-    $('#container').remove()
-    // options.series[0].data = [[35.00,35.91,36.82,37.73,38.64]];
+    var chart = $('#container').highcharts();
+        chart.series[0].setData(d);
 }
 $(function () {
-    ch = $('#container').highcharts({
+    chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container'
+        },
         title: {
             text: 'FFT',
             x: -20 //center
@@ -35,17 +37,8 @@ $(function () {
                 color: '#808080'
             }]
         },
-        tooltip: {
-            valueSuffix: '°C'
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'middle',
-            borderWidth: 0
-        },
         series: [{
-            name: 'fft',
+          
             data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
         }
         // , {
