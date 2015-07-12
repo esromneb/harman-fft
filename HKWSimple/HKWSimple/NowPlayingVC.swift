@@ -21,7 +21,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     var songUrl = ""
     var serverUrl = ""
     var ai: AudioProcessor = AudioProcessor()
-//    var timer       = NSTimer()
+    var timer       = NSTimer()
     var running = 0
 //    let timer: NSTimer
 //    var timer : NSTimer = nil //.scheduledTimerWithTimeInterval(999, target: self, selector: Selector("nothing"), userInfo: nil, repeats: false)
@@ -148,7 +148,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         
         ai.start()
     
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.07, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.07, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         
     }
     
@@ -157,12 +157,9 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     }
     
     func stopTimer() {
-//        if(timer)
-//        {
-//            timer.invalidate()
-//            [timer invalidate];
-//            timer = nil;
-//        }
+
+        timer.invalidate()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -173,6 +170,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     override func viewDidDisappear(animated: Bool) {
         if( ai.running() != 0 )
         {
+            stopTimer()
             ai.stop()
         }
     }
