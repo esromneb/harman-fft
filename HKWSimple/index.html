@@ -2,13 +2,24 @@
 <head>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>
 <script>
 var chart;
-function upd(d)
+function upd(d,p)
 {
     var chart = $('#container').highcharts();
+    chart.series[0].setData([], true, false, true);
         chart.series[0].setData(d, true, false, true);
+
+        // for(i = 0; i < 512; i++)
+        // {
+        //     chart.series[0].data[i].update({marker:{radius:1},color:'#000'});
+        // }
+
+        if(p !== undefined)
+        {
+            chart.series[0].data[p].update({marker:{radius:2},color:'#f00'});
+        }
+
 }
 $(function () {
     chart = new Highcharts.Chart({
@@ -23,17 +34,22 @@ $(function () {
         //     text: 'Source: WorldClimate.com',
         //     x: -20
         // },
-        xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-        },
+         xAxis: {
+            labels:{enabled: false}
+        //     categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+        //         'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+         },
 
 
         yAxis: {
+            title:{
+                text:''
+            },
             type: 'logarithmic',
             minorTickInterval: 10,
             min:100,
-            max:9000000000
+            max:10000000000000,
+            labels:{enabled: false}
         },
 
         animation:false,
@@ -51,7 +67,10 @@ $(function () {
         // },
         series: [{
           
-            data: [0,0,0]
+            data: [0,0,0,1000000,99999,996, 0,0],
+             color: '#000000',
+             lineWidth: 1,
+             marker: {  radius: 0 } 
         }
         // , {
         //     name: 'New York',

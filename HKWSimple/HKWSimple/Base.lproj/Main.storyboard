@@ -69,6 +69,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="QMl-PF-AbG">
+                                <rect key="frame" x="-12" y="20" width="344" height="504"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -191,8 +194,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqZ-Hm-vF1">
-                                <rect key="frame" x="16" y="100" width="288" height="64"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfs-ds-DG9">
+                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqZ-Hm-vF1">
+                                <rect key="frame" x="-81" y="434" width="288" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="mOd-NZ-Zaj"/>
                                 </constraints>
@@ -200,8 +207,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMM-93-vrh">
-                                <rect key="frame" x="202" y="318" width="106" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMM-93-vrh">
+                                <rect key="frame" x="229" y="434" width="106" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -210,14 +217,8 @@
                                     <action selector="volumeUp:" destination="b2s-ay-GOh" eventType="touchUpInside" id="wCo-J8-tK3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Playing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-Mf-kes">
-                                <rect key="frame" x="16" y="222" width="132" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-Bv-f2W">
-                                <rect key="frame" x="207" y="369" width="96" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-Bv-f2W">
+                                <rect key="frame" x="234" y="462" width="96" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="Z9q-9a-5oF"/>
                                 </constraints>
@@ -229,8 +230,8 @@
                                     <action selector="volumeDown:" destination="b2s-ay-GOh" eventType="touchUpInside" id="AE4-uM-o3H"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5Z-15-AjJ">
-                                <rect key="frame" x="206" y="219" width="98" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5Z-15-AjJ">
+                                <rect key="frame" x="118" y="449" width="98" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="nqQ-Tv-zCR"/>
                                     <constraint firstAttribute="width" constant="98" id="yZs-EN-yh1"/>
@@ -243,8 +244,8 @@
                                     <action selector="playOrStop:" destination="b2s-ay-GOh" eventType="touchUpInside" id="nhg-c0-Y5U"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIY-wG-6s3">
-                                <rect key="frame" x="16" y="338" width="160" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Volume: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIY-wG-6s3">
+                                <rect key="frame" x="7" y="481" width="160" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="evT-ai-0Lv"/>
                                 </constraints>
@@ -252,19 +253,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5C-hK-hCN">
-                                <rect key="frame" x="96" y="443" width="30" height="30"/>
-                                <state key="normal" title="Mic">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="runMic:" destination="b2s-ay-GOh" eventType="touchUpInside" id="kTg-Mp-VaX"/>
-                                </connections>
-                            </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfs-ds-DG9">
-                                <rect key="frame" x="8" y="10" width="295" height="320"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -273,16 +261,12 @@
                             <constraint firstItem="YaU-Bv-f2W" firstAttribute="top" secondItem="pMM-93-vrh" secondAttribute="bottom" constant="15" id="D5v-c9-4q0"/>
                             <constraint firstItem="X5Z-15-AjJ" firstAttribute="top" secondItem="gqZ-Hm-vF1" secondAttribute="bottom" constant="55" id="FkV-ac-Mqi"/>
                             <constraint firstItem="pMM-93-vrh" firstAttribute="leading" secondItem="JIY-wG-6s3" secondAttribute="trailing" constant="26" id="JEz-zv-ecY"/>
-                            <constraint firstItem="ygG-Mf-kes" firstAttribute="top" secondItem="gqZ-Hm-vF1" secondAttribute="bottom" constant="58" id="Ls4-Pu-h7o"/>
-                            <constraint firstItem="X5Z-15-AjJ" firstAttribute="leading" secondItem="ygG-Mf-kes" secondAttribute="trailing" constant="58" id="Qlu-0A-eQM"/>
                             <constraint firstItem="X5Z-15-AjJ" firstAttribute="trailing" secondItem="gqZ-Hm-vF1" secondAttribute="trailing" id="WOy-tm-MWq"/>
                             <constraint firstItem="gqZ-Hm-vF1" firstAttribute="top" secondItem="bg8-fe-3ta" secondAttribute="bottom" constant="36" id="avI-su-z1d"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YaU-Bv-f2W" secondAttribute="trailing" constant="1" id="dUn-gD-BOZ"/>
                             <constraint firstItem="gqZ-Hm-vF1" firstAttribute="trailing" secondItem="5zS-7z-Bui" secondAttribute="trailingMargin" id="hRk-uc-1r4"/>
                             <constraint firstItem="JIY-wG-6s3" firstAttribute="leading" secondItem="5zS-7z-Bui" secondAttribute="leadingMargin" id="k8u-Hw-yvU"/>
                             <constraint firstItem="gqZ-Hm-vF1" firstAttribute="leading" secondItem="5zS-7z-Bui" secondAttribute="leadingMargin" id="n1f-Wa-TTf"/>
-                            <constraint firstItem="ygG-Mf-kes" firstAttribute="leading" secondItem="5zS-7z-Bui" secondAttribute="leadingMargin" id="ndl-vp-aVU"/>
-                            <constraint firstItem="JIY-wG-6s3" firstAttribute="top" secondItem="ygG-Mf-kes" secondAttribute="bottom" constant="89" id="tOD-c3-oBi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Step3. Now Playing" id="Y1i-mZ-pvY"/>
@@ -293,7 +277,6 @@
                         <outlet property="btnVolumeUp" destination="pMM-93-vrh" id="aMr-Kd-1FH"/>
                         <outlet property="labelAverageVolume" destination="JIY-wG-6s3" id="iZD-xy-QQb"/>
                         <outlet property="labelSongTitle" destination="gqZ-Hm-vF1" id="kLH-wo-2Fh"/>
-                        <outlet property="labelStatus" destination="ygG-Mf-kes" id="CRw-w0-LyI"/>
                         <outlet property="webView" destination="wfs-ds-DG9" id="toq-TC-RkS"/>
                     </connections>
                 </viewController>
@@ -320,6 +303,9 @@
             <point key="canvasLocation" x="436" y="470"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.png" width="320" height="480"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

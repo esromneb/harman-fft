@@ -21,6 +21,12 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     var songUrl = ""
     var serverUrl = ""
     var ai: AudioProcessor = AudioProcessor()
+//    var timer       = NSTimer()
+    var running = 0
+//    let timer: NSTimer
+//    var timer : NSTimer = nil //.scheduledTimerWithTimeInterval(999, target: self, selector: Selector("nothing"), userInfo: nil, repeats: false)
+//    var timer:NSTimer = 0
+//     var timer: NSTimer = nil
 
 
     var g_alert: UIAlertController!
@@ -35,16 +41,24 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     
     @IBAction func playOrStop(sender: UIButton) {
         if HKWControlHandler.sharedInstance().isPlaying() {
+            
+//            ai.stop()
+            running = 0
+//            stopTimer()
+            
             HKWControlHandler.sharedInstance().pause()
-            labelStatus.text = "Play Stopped"
+//            labelStatus.text = "Play Stopped"
 
             btnPlayStop.setTitle("Play", forState: UIControlState.Normal)
 
         }
         else {
+            running = 1
             playCurrentTitle()
-            labelStatus.text = "Now Playing"
+//            labelStatus.text = "Now Playing"
         }
+        
+        
     }
     
     @IBAction func volumeUp(sender: UIButton) {
@@ -79,18 +93,27 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     }
     
     func update() {
+        if( running == 1)
+        {
+            var max = 0;
         var string = "window.upd(["
-        for var i = 0; i < 512; i+=2 {
+        for var i = 0; i < 512; i++ {
             let fs = String(format: "%f,",ai.mags[i])
             string += fs
+            if( ai.mags[i] > ai.mags[max] )
+            {
+                max = i;
+            }
         }
         
-        string += "0])"
-        
+//        string += "0])"
+        string += String(format: "0],%d)",max)
+//        print(max)
+//        print("\r")
+            
         
         webView.stringByEvaluatingJavaScriptFromString(string)
-//        print(ai.updates)
-//        print("\n")
+        }
     }
     
     
@@ -109,11 +132,11 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         } else {
             if HKWControlHandler.sharedInstance().isPlaying() {
                 btnPlayStop.setTitle("Stop", forState: UIControlState.Normal)
-                labelStatus.text = "Now Playing"
+//                labelStatus.text = "Now Playing"
             }
             else {
                 btnPlayStop.setTitle("Play", forState: UIControlState.Normal)
-                labelStatus.text = "Play Stopped"
+//                labelStatus.text = "Play Stopped"
             }
         }
         
@@ -124,10 +147,22 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
 
         
         ai.start()
-        
+    
         var timer = NSTimer.scheduledTimerWithTimeInterval(0.07, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         
+    }
+    
+    func nothing() {
         
+    }
+    
+    func stopTimer() {
+//        if(timer)
+//        {
+//            timer.invalidate()
+//            [timer invalidate];
+//            timer = nil;
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -164,6 +199,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
             playStreaming()
         }
         songSelectionTVC.bbiNowPlaying.enabled = true
+        running = 1
     }
     
     func playStreaming() {
