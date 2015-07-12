@@ -16,6 +16,11 @@
 		1785A15D1B5227D500356858 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A15C1B5227D500356858 /* CoreGraphics.framework */; };
 		1785A1611B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
 		1785A1621B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
+		17B80CA51B5287FB0054EFA1 /* FunctionPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CA41B5287FB0054EFA1 /* FunctionPlot.m */; };
+		17B80CA61B5288370054EFA1 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B80CA01B52874F0054EFA1 /* libCorePlot-CocoaTouch.a */; };
+		17B80CAD1B5288610054EFA1 /* PiNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CA81B5288610054EFA1 /* PiNumberFormatter.m */; };
+		17B80CAE1B5288610054EFA1 /* PlotGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CAA1B5288610054EFA1 /* PlotGallery.m */; };
+		17B80CAF1B5288610054EFA1 /* PlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B80CAC1B5288610054EFA1 /* PlotItem.m */; };
 		17DBE05D1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DBE05C1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 */; };
 		17DBE05F1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DBE05E1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 */; };
 		17DBE0611B526672000726AF /* 1915678_Choose_Me_II_Original_Mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DBE0601B526672000726AF /* 1915678_Choose_Me_II_Original_Mix.mp3 */; };
@@ -42,6 +47,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		17B80C9F1B52874F0054EFA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17B80C991B52874E0054EFA1 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		17B80CA11B5287990054EFA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17B80C991B52874E0054EFA1 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
 		76D40DE31B4E4AEE003904D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 76D40DC51B4E4AEE003904D2 /* Project object */;
@@ -60,6 +79,15 @@
 		1785A15A1B5227B800356858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1785A15C1B5227D500356858 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1785A1601B52288100356858 /* EZAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EZAudio; path = HKWSimple/EZAudio; sourceTree = "<group>"; };
+		17B80C991B52874E0054EFA1 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		17B80CA31B5287FB0054EFA1 /* FunctionPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionPlot.h; sourceTree = "<group>"; };
+		17B80CA41B5287FB0054EFA1 /* FunctionPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionPlot.m; sourceTree = "<group>"; };
+		17B80CA71B5288610054EFA1 /* PiNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PiNumberFormatter.h; sourceTree = "<group>"; };
+		17B80CA81B5288610054EFA1 /* PiNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PiNumberFormatter.m; sourceTree = "<group>"; };
+		17B80CA91B5288610054EFA1 /* PlotGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotGallery.h; sourceTree = "<group>"; };
+		17B80CAA1B5288610054EFA1 /* PlotGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotGallery.m; sourceTree = "<group>"; };
+		17B80CAB1B5288610054EFA1 /* PlotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotItem.h; sourceTree = "<group>"; };
+		17B80CAC1B5288610054EFA1 /* PlotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotItem.m; sourceTree = "<group>"; };
 		17DBE05C1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3"; sourceTree = "<group>"; };
 		17DBE05E1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1770753_Milky_Way_Original_Mix.mp3; sourceTree = "<group>"; };
 		17DBE0601B526672000726AF /* 1915678_Choose_Me_II_Original_Mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1915678_Choose_Me_II_Original_Mix.mp3; sourceTree = "<group>"; };
@@ -101,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B80CA61B5288370054EFA1 /* libCorePlot-CocoaTouch.a in Frameworks */,
 				1785A15D1B5227D500356858 /* CoreGraphics.framework in Frameworks */,
 				1785A15B1B5227B800356858 /* Foundation.framework in Frameworks */,
 				1785A1591B5227AD00356858 /* UIKit.framework in Frameworks */,
@@ -124,9 +153,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17B80C9A1B52874E0054EFA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17B80CA01B52874F0054EFA1 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		76D40DC41B4E4AEE003904D2 = {
 			isa = PBXGroup;
 			children = (
+				17B80C991B52874E0054EFA1 /* CorePlot-CocoaTouch.xcodeproj */,
 				1785A1601B52288100356858 /* EZAudio */,
 				1785A15C1B5227D500356858 /* CoreGraphics.framework */,
 				1785A15A1B5227B800356858 /* Foundation.framework */,
@@ -178,6 +216,14 @@
 				76D40DD01B4E4AEE003904D2 /* Supporting Files */,
 				17E5B8821B52438B00F2BD25 /* AudioProcessor.h */,
 				17E5B8831B52438B00F2BD25 /* AudioProcessor.m */,
+				17B80CA71B5288610054EFA1 /* PiNumberFormatter.h */,
+				17B80CA81B5288610054EFA1 /* PiNumberFormatter.m */,
+				17B80CA91B5288610054EFA1 /* PlotGallery.h */,
+				17B80CAA1B5288610054EFA1 /* PlotGallery.m */,
+				17B80CAB1B5288610054EFA1 /* PlotItem.h */,
+				17B80CAC1B5288610054EFA1 /* PlotItem.m */,
+				17B80CA31B5287FB0054EFA1 /* FunctionPlot.h */,
+				17B80CA41B5287FB0054EFA1 /* FunctionPlot.m */,
 			);
 			path = HKWSimple;
 			sourceTree = "<group>";
@@ -250,6 +296,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				17B80CA21B5287990054EFA1 /* PBXTargetDependency */,
 			);
 			name = HKWSimple;
 			productName = HKWSimple;
@@ -304,6 +351,12 @@
 			mainGroup = 76D40DC41B4E4AEE003904D2;
 			productRefGroup = 76D40DCE1B4E4AEE003904D2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 17B80C9A1B52874E0054EFA1 /* Products */;
+					ProjectRef = 17B80C991B52874E0054EFA1 /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				76D40DCC1B4E4AEE003904D2 /* HKWSimple */,
@@ -311,6 +364,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		17B80CA01B52874F0054EFA1 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 17B80C9F1B52874F0054EFA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		76D40DCB1B4E4AEE003904D2 /* Resources */ = {
@@ -347,14 +410,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B80CA51B5287FB0054EFA1 /* FunctionPlot.m in Sources */,
 				76D40DD51B4E4AEE003904D2 /* ViewController.swift in Sources */,
 				76D40DF91B4E4B86003904D2 /* MainVC.swift in Sources */,
 				76D40DF81B4E4B86003904D2 /* GlobalConstants.swift in Sources */,
 				76D40DFA1B4E4B86003904D2 /* NowPlayingVC.swift in Sources */,
 				76D40DFC1B4E4B86003904D2 /* SpeakerSelectionTVC.swift in Sources */,
+				17B80CAD1B5288610054EFA1 /* PiNumberFormatter.m in Sources */,
+				17B80CAF1B5288610054EFA1 /* PlotItem.m in Sources */,
 				17E5B8841B52438B00F2BD25 /* AudioProcessor.m in Sources */,
 				76D40DD31B4E4AEE003904D2 /* AppDelegate.swift in Sources */,
 				76D40DFB1B4E4B86003904D2 /* SongSelectionTVC.swift in Sources */,
+				17B80CAE1B5288610054EFA1 /* PlotGallery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +436,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		17B80CA21B5287990054EFA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = 17B80CA11B5287990054EFA1 /* PBXContainerItemProxy */;
+		};
 		76D40DE41B4E4AEE003904D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 76D40DCC1B4E4AEE003904D2 /* HKWSimple */;
@@ -483,6 +555,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"<Multiple",
+					"values>",
+					"/Users/x/core-plot/framework/**",
+				);
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -509,9 +586,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					HKWSimple/EZAudio,
+					"<Multiple",
+					"values>",
+					"/Users/x/core-plot/framework/**",
 				);
 				INFOPLIST_FILE = HKWSimple/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;

@@ -12,6 +12,8 @@
 	<dict>
 		<key>1BD6BE298AC7904A8D5BA76143A5495C5D7A2894</key>
 		<string>https://github.com/khague/iOSHKomniSDK.git</string>
+		<key>8B3D884E5CB77CFCF2CE65E14C999AAC1DC843A5</key>
+		<string>github.com:core-plot/core-plot.git</string>
 		<key>A7ACF239B1877512D827FD783F4FD9B6C67D4256</key>
 		<string>github.com:esromneb/harman-fft.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>1BD6BE298AC7904A8D5BA76143A5495C5D7A2894</key>
 		<string>../../../../iOSHKomniSDK</string>
+		<key>8B3D884E5CB77CFCF2CE65E14C999AAC1DC843A5</key>
+		<string>../../../../core-plot</string>
 		<key>A7ACF239B1877512D827FD783F4FD9B6C67D4256</key>
 		<string>../../..</string>
 	</dict>
@@ -32,6 +36,14 @@
 	<string>A7ACF239B1877512D827FD783F4FD9B6C67D4256</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8B3D884E5CB77CFCF2CE65E14C999AAC1DC843A5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>core-plot</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
