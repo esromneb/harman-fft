@@ -21,13 +21,8 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     var songUrl = ""
     var serverUrl = ""
     var ai: AudioProcessor = AudioProcessor()
-    var timer       = NSTimer()
+    var timer = NSTimer()
     var running = 0
-//    let timer: NSTimer
-//    var timer : NSTimer = nil //.scheduledTimerWithTimeInterval(999, target: self, selector: Selector("nothing"), userInfo: nil, repeats: false)
-//    var timer:NSTimer = 0
-//     var timer: NSTimer = nil
-
 
     var g_alert: UIAlertController!
 
@@ -97,7 +92,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         {
             var max = 0;
         var string = "window.upd(["
-        for var i = 0; i < 512; i++ {
+        for var i = 0; i < 300; i++ {
             let fs = String(format: "%f,",ai.mags[i])
             string += fs
             if( ai.mags[i] > ai.mags[max] )
