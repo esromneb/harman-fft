@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="c5I-r0-mH4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Step 0 of 3-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MainVC" customModule="HKWSimple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4VU-j5-7sn"/>
+                        <viewControllerLayoutGuide type="bottom" id="QJ0-6E-GRM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf6-v1-Zrb">
+                                <rect key="frame" x="16" y="165" width="288" height="383"/>
+                                <color key="backgroundColor" white="0.91134259259259254" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="383" id="bbe-yf-v5G"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Step1">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="   - Select speakers to play with.   - By default, all available speakers are selected.  ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Step 2">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="  - Select a song to play.  ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Step 3">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" - Control the playback.  : Play or Stop  : Control volume ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basic steps to play with HKWirelessHD API" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jw-nu-jkF">
+                                <rect key="frame" x="-64" y="95" width="449" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vf6-v1-Zrb" firstAttribute="top" secondItem="2Jw-nu-jkF" secondAttribute="bottom" constant="25" id="3X0-e8-oih"/>
+                            <constraint firstAttribute="bottom" secondItem="vf6-v1-Zrb" secondAttribute="bottom" constant="20" symbolic="YES" id="9Zy-pv-qPn"/>
+                            <constraint firstItem="2Jw-nu-jkF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-80" id="JOr-6x-UHl"/>
+                            <constraint firstItem="vf6-v1-Zrb" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="YJZ-9g-ddW"/>
+                            <constraint firstItem="2Jw-nu-jkF" firstAttribute="centerX" secondItem="vf6-v1-Zrb" secondAttribute="centerX" id="eKA-2j-FG2"/>
+                            <constraint firstItem="vf6-v1-Zrb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="mYG-Zx-jQU"/>
+                            <constraint firstItem="2Jw-nu-jkF" firstAttribute="top" secondItem="4VU-j5-7sn" secondAttribute="bottom" constant="31" id="uQD-u8-Qxg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Step 0 of 3" id="z3L-FZ-8Sh">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="pcU-6v-Wnh">
+                            <connections>
+                                <segue destination="aN5-Up-Elq" kind="push" identifier="Speaker_Selection_TVC" id="Adl-rV-m93"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="470"/>
+        </scene>
+        <!--Step1: Speaker Selection-->
+        <scene sceneID="vTl-q4-ccd">
+            <objects>
+                <tableViewController id="aN5-Up-Elq" customClass="SpeakerSelectionTVC" customModule="HKWSimple" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pyU-Vj-guW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Speaker_Cell" textLabel="vCi-WF-14x" detailTextLabel="1KA-Sk-WPj" style="IBUITableViewCellStyleSubtitle" id="df2-FL-sZv">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="df2-FL-sZv" id="m9f-wt-V8h">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vCi-WF-14x">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1KA-Sk-WPj">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aN5-Up-Elq" id="DcN-J1-SXI"/>
+                            <outlet property="delegate" destination="aN5-Up-Elq" id="1Os-63-zXL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Step1: Speaker Selection" id="ECj-jH-qRm">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="e7V-vv-3sa">
+                            <connections>
+                                <segue destination="6CY-uz-7vf" kind="push" id="9Fu-7h-Lt1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHz-Ym-Rds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="465.99999999999994"/>
+        </scene>
+        <!--Step2: Song Selection-->
+        <scene sceneID="g4d-ce-JBv">
+            <objects>
+                <tableViewController id="6CY-uz-7vf" customClass="SongSelectionTVC" customModule="HKWSimple" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7RK-2P-0fD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SongTitle_Cell" id="3gK-HA-tf4">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3gK-HA-tf4" id="t5m-en-7xf">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="b2s-ay-GOh" kind="push" identifier="Song_Cell" id="muu-lO-dTG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6CY-uz-7vf" id="17w-Zi-Yis"/>
+                            <outlet property="delegate" destination="6CY-uz-7vf" id="nI1-Xf-ks9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Step2: Song Selection" id="htM-6f-SWq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="3kG-aS-yr1">
+                            <connections>
+                                <segue destination="b2s-ay-GOh" kind="push" identifier="NowPlaying_BBI" id="qkO-R4-WJA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bbiNowPlaying" destination="3kG-aS-yr1" id="5rN-6w-GzQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vfs-xk-4xL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="464"/>
+        </scene>
+        <!--Step3. Now Playing-->
+        <scene sceneID="jUk-9L-lwr">
+            <objects>
+                <viewController id="b2s-ay-GOh" customClass="NowPlayingVC" customModule="HKWSimple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bg8-fe-3ta"/>
+                        <viewControllerLayoutGuide type="bottom" id="H24-XG-uET"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5zS-7z-Bui">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqZ-Hm-vF1">
+                                <rect key="frame" x="16" y="100" width="288" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="mOd-NZ-Zaj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMM-93-vrh">
+                                <rect key="frame" x="202" y="318" width="106" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="volumeUp:" destination="b2s-ay-GOh" eventType="touchUpInside" id="wCo-J8-tK3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Playing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-Mf-kes">
+                                <rect key="frame" x="16" y="222" width="132" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaU-Bv-f2W">
+                                <rect key="frame" x="207" y="369" width="96" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="Z9q-9a-5oF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Down">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="volumeDown:" destination="b2s-ay-GOh" eventType="touchUpInside" id="AE4-uM-o3H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5Z-15-AjJ">
+                                <rect key="frame" x="206" y="219" width="98" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="nqQ-Tv-zCR"/>
+                                    <constraint firstAttribute="width" constant="98" id="yZs-EN-yh1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playOrStop:" destination="b2s-ay-GOh" eventType="touchUpInside" id="nhg-c0-Y5U"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIY-wG-6s3">
+                                <rect key="frame" x="16" y="338" width="160" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="evT-ai-0Lv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pMM-93-vrh" secondAttribute="trailing" constant="-4" id="12j-hz-LW2"/>
+                            <constraint firstItem="pMM-93-vrh" firstAttribute="top" secondItem="X5Z-15-AjJ" secondAttribute="bottom" constant="65" id="42m-ND-33j"/>
+                            <constraint firstItem="YaU-Bv-f2W" firstAttribute="top" secondItem="pMM-93-vrh" secondAttribute="bottom" constant="15" id="D5v-c9-4q0"/>
+                            <constraint firstItem="X5Z-15-AjJ" firstAttribute="top" secondItem="gqZ-Hm-vF1" secondAttribute="bottom" constant="55" id="FkV-ac-Mqi"/>
+                            <constraint firstItem="pMM-93-vrh" firstAttribute="leading" secondItem="JIY-wG-6s3" secondAttribute="trailing" constant="26" id="JEz-zv-ecY"/>
+                            <constraint firstItem="ygG-Mf-kes" firstAttribute="top" secondItem="gqZ-Hm-vF1" secondAttribute="bottom" constant="58" id="Ls4-Pu-h7o"/>
+                            <constraint firstItem="X5Z-15-AjJ" firstAttribute="leading" secondItem="ygG-Mf-kes" secondAttribute="trailing" constant="58" id="Qlu-0A-eQM"/>
+                            <constraint firstItem="X5Z-15-AjJ" firstAttribute="trailing" secondItem="gqZ-Hm-vF1" secondAttribute="trailing" id="WOy-tm-MWq"/>
+                            <constraint firstItem="gqZ-Hm-vF1" firstAttribute="top" secondItem="bg8-fe-3ta" secondAttribute="bottom" constant="36" id="avI-su-z1d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YaU-Bv-f2W" secondAttribute="trailing" constant="1" id="dUn-gD-BOZ"/>
+                            <constraint firstItem="gqZ-Hm-vF1" firstAttribute="trailing" secondItem="5zS-7z-Bui" secondAttribute="trailingMargin" id="hRk-uc-1r4"/>
+                            <constraint firstItem="JIY-wG-6s3" firstAttribute="leading" secondItem="5zS-7z-Bui" secondAttribute="leadingMargin" id="k8u-Hw-yvU"/>
+                            <constraint firstItem="gqZ-Hm-vF1" firstAttribute="leading" secondItem="5zS-7z-Bui" secondAttribute="leadingMargin" id="n1f-Wa-TTf"/>
+                            <constraint firstItem="ygG-Mf-kes" firstAttribute="leading" secondItem="5zS-7z-Bui" secondAttribute="leadingMargin" id="ndl-vp-aVU"/>
+                            <constraint firstItem="JIY-wG-6s3" firstAttribute="top" secondItem="ygG-Mf-kes" secondAttribute="bottom" constant="89" id="tOD-c3-oBi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Step3. Now Playing" id="Y1i-mZ-pvY"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="btnPlayStop" destination="X5Z-15-AjJ" id="OJo-Q5-A4F"/>
+                        <outlet property="btnVolumeDown" destination="YaU-Bv-f2W" id="kOi-dQ-eWY"/>
+                        <outlet property="btnVolumeUp" destination="pMM-93-vrh" id="aMr-Kd-1FH"/>
+                        <outlet property="labelAverageVolume" destination="JIY-wG-6s3" id="iZD-xy-QQb"/>
+                        <outlet property="labelSongTitle" destination="gqZ-Hm-vF1" id="kLH-wo-2Fh"/>
+                        <outlet property="labelStatus" destination="ygG-Mf-kes" id="CRw-w0-LyI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6b-24-0b6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2035" y="463"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PDF-Ah-LSu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c5I-r0-mH4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KOk-x9-ZhR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Pj0-xF-iFq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0I9-WV-BhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="470"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="qkO-R4-WJA"/>
+    </inferredMetricsTieBreakers>
+</document>

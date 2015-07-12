@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0EEC18E-086F-4E26-B74F-9E7B010D7BB3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HKWSimple</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1BD6BE298AC7904A8D5BA76143A5495C5D7A2894</key>
+		<string>https://github.com/khague/iOSHKomniSDK.git</string>
+		<key>A7ACF239B1877512D827FD783F4FD9B6C67D4256</key>
+		<string>github.com:esromneb/harman-fft.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HKWSimple/HKWSimple.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1BD6BE298AC7904A8D5BA76143A5495C5D7A2894</key>
+		<string>../../../../iOSHKomniSDK</string>
+		<key>A7ACF239B1877512D827FD783F4FD9B6C67D4256</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:esromneb/harman-fft.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A7ACF239B1877512D827FD783F4FD9B6C67D4256</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A7ACF239B1877512D827FD783F4FD9B6C67D4256</string>
+			<key>IDESourceControlWCCName</key>
+			<string>harman-fft</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1BD6BE298AC7904A8D5BA76143A5495C5D7A2894</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSHKomniSDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>
