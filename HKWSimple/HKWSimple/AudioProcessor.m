@@ -10,6 +10,8 @@
 
 #pragma mark Recording callback
 
+int isRunning = 0;
+
 static OSStatus recordingCallback(void *inRefCon,
                                   AudioUnitRenderActionFlags *ioActionFlags,
                                   const AudioTimeStamp *inTimeStamp,
@@ -96,6 +98,9 @@ static OSStatus playbackCallback(void *inRefCon,
         gain = 0;
         [self initializeAudio];
     }
+    
+    isRunning = 0;
+    
     return self;
 }
 
@@ -253,12 +258,19 @@ static OSStatus playbackCallback(void *inRefCon,
     // start the audio unit. You should hear something, hopefully :)
     OSStatus status = AudioOutputUnitStart(audioUnit);
     [self hasError:status:__FILE__:__LINE__];
+    isRunning = 1;
 }
 -(void)stop;
 {
     // stop the audio unit
     OSStatus status = AudioOutputUnitStop(audioUnit);
     [self hasError:status:__FILE__:__LINE__];
+    isRunning = 0;
+}
+
+-(int)running
+{
+    return isRunning;
 }
 
 
@@ -276,6 +288,9 @@ static OSStatus playbackCallback(void *inRefCon,
 
 -(void)processBuffer: (AudioBufferList*) audioBufferList
 {
+    static int count = 0;
+    NSLog(@"cnt %d", count++);
+    
     AudioBuffer sourceBuffer = audioBufferList->mBuffers[0];
     
     // we check here if the input data byte size has changed

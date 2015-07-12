@@ -44,10 +44,10 @@
 // control object
 -(void)start;
 -(void)stop;
+-(int)running;
 
 // gain
 -(void)setGain:(float)gainValue;
--(void)someMethod:(float)gainValue;
 -(float)getGain;
 
 

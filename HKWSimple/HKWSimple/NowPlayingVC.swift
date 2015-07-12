@@ -117,6 +117,13 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        if( ai.running() != 0 )
+        {
+            ai.stop()
+        }
+    }
+    
     func playCurrentTitle() {
         
         // just to be sure that there is no running playback
