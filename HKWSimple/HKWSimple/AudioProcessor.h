@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
-
+#import </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h>
 // return max value for given values
 #define max(a, b) (((a) > (b)) ? (a) : (b))
 // return min value for given values
@@ -30,11 +30,15 @@
     
     // gain
     float gain;
+    
+    FFTSetup      _FFTSetup;
 }
 
 @property (readonly) AudioBuffer audioBuffer;
 @property (readonly) AudioComponentInstance audioUnit;
 @property (nonatomic) float gain;
+
+typedef struct OpaqueFFTSetup * FFTSetup;
 
 -(AudioProcessor*)init;
 

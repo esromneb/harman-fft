@@ -16,6 +16,9 @@
 		1785A15D1B5227D500356858 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A15C1B5227D500356858 /* CoreGraphics.framework */; };
 		1785A1611B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
 		1785A1621B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
+		17DBE05D1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DBE05C1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 */; };
+		17DBE05F1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DBE05E1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 */; };
+		17DBE0611B526672000726AF /* 1915678_Choose_Me_II_Original_Mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17DBE0601B526672000726AF /* 1915678_Choose_Me_II_Original_Mix.mp3 */; };
 		17E2C5211B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */; };
 		17E5B8841B52438B00F2BD25 /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E5B8831B52438B00F2BD25 /* AudioProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		17E5B8891B52526E00F2BD25 /* 15hz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E5B8851B52526E00F2BD25 /* 15hz.mp3 */; };
@@ -57,6 +60,9 @@
 		1785A15A1B5227B800356858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1785A15C1B5227D500356858 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1785A1601B52288100356858 /* EZAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EZAudio; path = HKWSimple/EZAudio; sourceTree = "<group>"; };
+		17DBE05C1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3"; sourceTree = "<group>"; };
+		17DBE05E1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1770753_Milky_Way_Original_Mix.mp3; sourceTree = "<group>"; };
+		17DBE0601B526672000726AF /* 1915678_Choose_Me_II_Original_Mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1915678_Choose_Me_II_Original_Mix.mp3; sourceTree = "<group>"; };
 		17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1808861_Everyday_Netsky_Remix.mp3; sourceTree = "<group>"; };
 		17E5B8821B52438B00F2BD25 /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioProcessor.h; sourceTree = "<group>"; };
 		17E5B8831B52438B00F2BD25 /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioProcessor.m; sourceTree = "<group>"; };
@@ -149,7 +155,10 @@
 		76D40DCF1B4E4AEE003904D2 /* HKWSimple */ = {
 			isa = PBXGroup;
 			children = (
+				17DBE05C1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 */,
 				17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */,
+				17DBE05E1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 */,
+				17DBE0601B526672000726AF /* 1915678_Choose_Me_II_Original_Mix.mp3 */,
 				17E5B8851B52526E00F2BD25 /* 15hz.mp3 */,
 				17E5B8861B52526E00F2BD25 /* 20hz.mp3 */,
 				17E5B8871B52526E00F2BD25 /* fast-sweep.mp3 */,
@@ -314,6 +323,9 @@
 				17E5B88B1B52526E00F2BD25 /* fast-sweep.mp3 in Resources */,
 				1785A1611B52288100356858 /* EZAudio in Resources */,
 				17E5B88A1B52526E00F2BD25 /* 20hz.mp3 in Resources */,
+				17DBE05F1B526665000726AF /* 1770753_Milky_Way_Original_Mix.mp3 in Resources */,
+				17DBE0611B526672000726AF /* 1915678_Choose_Me_II_Original_Mix.mp3 in Resources */,
+				17DBE05D1B526646000726AF /* Flight Facilities - Crave You (Adventure Club Dubstep Remix).mp3 in Resources */,
 				76D40DDD1B4E4AEE003904D2 /* LaunchScreen.xib in Resources */,
 				17E5B88C1B52526E00F2BD25 /* slow-long.mp3 in Resources */,
 				76D40DDA1B4E4AEE003904D2 /* Images.xcassets in Resources */,

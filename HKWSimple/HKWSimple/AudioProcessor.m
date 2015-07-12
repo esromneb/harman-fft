@@ -249,6 +249,32 @@ static OSStatus playbackCallback(void *inRefCon,
     
     NSLog(@"Started");
     
+    
+    int bufferSize = 1024;
+    
+    // setup fft
+    
+    _FFTSetup = vDSP_create_fftsetup(10, FFT_RADIX2);
+
+//    _FFTSetup = vDSP_create_fftsetup(_log2n, FFT_RADIX2);
+//    
+//    // For an FFT, numSamples must be a power of 2, i.e. is always even
+    int nOver2 = bufferSize/2;
+    
+//    // Populate *window with the values for a hamming window function
+//    float *window = (float *)malloc(sizeof(float)*bufferSize);
+//    vDSP_hamm_window(window, bufferSize, 0);
+//    // Window the samples
+//    vDSP_vmul(data, 1, window, 1, data, 1, bufferSize);
+//    free(window);
+//    
+//    // Define complex buffer
+//    _A.realp = (float *) malloc(nOver2*sizeof(float));
+//    _A.imagp = (float *) malloc(nOver2*sizeof(float));
+  
+    
+    
+    typedef struct OpaqueFFTSetup * FFTSetup;
 }
 
 #pragma mark controll stream
@@ -284,12 +310,14 @@ static OSStatus playbackCallback(void *inRefCon,
     return gain;
 }
 
+
+
 #pragma mark processing
 
 -(void)processBuffer: (AudioBufferList*) audioBufferList
 {
-    static int count = 0;
-    NSLog(@"cnt %d", count++);
+//    static int called = 0;
+//    NSLog(@"cnt %d", called++);
     
     AudioBuffer sourceBuffer = audioBufferList->mBuffers[0];
     
@@ -309,50 +337,92 @@ static OSStatus playbackCallback(void *inRefCon,
      */
     SInt16 *editBuffer = audioBufferList->mBuffers[0].mData;
     
+    int count = (audioBufferList->mBuffers[0].mDataByteSize / 2);
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // loop over every packet
-    for (int nb = 0; nb < (audioBufferList->mBuffers[0].mDataByteSize / 2); nb++) {
+    for (int nb = 0; nb < count; nb++) {
+        
+//        NSLog(@"%d",editBuffer[nb]);
         
         // we check if the gain has been modified to save resoures
-        if (gain != 0) {
-            // we need more accuracy in our calculation so we calculate with doubles
-            double gainSample = ((double)editBuffer[nb]) / 32767.0;
-            
-            /*
-             at this point we multiply with our gain factor
-             we dont make a addition to prevent generation of sound where no sound is.
-             
-             no noise
-             0*10=0
-             
-             noise if zero
-             0+10=10
-             */
-            gainSample *= gain;
-            
-            /**
-             our signal range cant be higher or lesser -1.0/1.0
-             we prevent that the signal got outside our range
-             */
-            gainSample = (gainSample < -1.0) ? -1.0 : (gainSample > 1.0) ? 1.0 : gainSample;
-            
-            /*
-             This thing here is a little helper to shape our incoming wave.
-             The sound gets pretty warm and better and the noise is reduced a lot.
-             Feel free to outcomment this line and here again.
-             
-             You can see here what happens here http://silentmatt.com/javascript-function-plotter/
-             Copy this to the command line and hit enter: plot y=(1.5*x)-0.5*x*x*x
-             */
-            
-            gainSample = (1.5 * gainSample) - 0.5 * gainSample * gainSample * gainSample;
-            
-            // multiply the new signal back to short 
-            gainSample = gainSample * 32767.0;
+        //if (gain != 0) {
+//            // we need more accuracy in our calculation so we calculate with doubles
+//            double gainSample = ((double)editBuffer[nb]) / 32767.0;
+//            
+//            /*
+//             at this point we multiply with our gain factor
+//             we dont make a addition to prevent generation of sound where no sound is.
+//             
+//             no noise
+//             0*10=0
+//             
+//             noise if zero
+//             0+10=10
+//             */
+//            gainSample *= gain;
+//            
+//            /**
+//             our signal range cant be higher or lesser -1.0/1.0
+//             we prevent that the signal got outside our range
+//             */
+//            gainSample = (gainSample < -1.0) ? -1.0 : (gainSample > 1.0) ? 1.0 : gainSample;
+//            
+//            /*
+//             This thing here is a little helper to shape our incoming wave.
+//             The sound gets pretty warm and better and the noise is reduced a lot.
+//             Feel free to outcomment this line and here again.
+//             
+//             You can see here what happens here http://silentmatt.com/javascript-function-plotter/
+//             Copy this to the command line and hit enter: plot y=(1.5*x)-0.5*x*x*x
+//             */
+//            
+//            gainSample = (1.5 * gainSample) - 0.5 * gainSample * gainSample * gainSample;
+//            
+//            // multiply the new signal back to short 
+//            gainSample = gainSample * 32767.0;
             
             // write calculate sample back to the buffer
-            editBuffer[nb] = (SInt16)gainSample;
-        }
+            editBuffer[nb] = 0;
+        //}
     }
+    
+//    
+//    
+//    
+//    // Pack samples:
+//    // C(re) -> A[n], C(im) -> A[n+1]
+//    vDSP_ctoz((COMPLEX*)data, 2, &_A, 1, nOver2);
+//    
+//    // Perform a forward FFT using fftSetup and A
+//    // Results are returned in A
+//    vDSP_fft_zrip(_FFTSetup, &_A, 1, _log2n, FFT_FORWARD);
+//    
+//    // Convert COMPLEX_SPLIT A result to magnitudes
+//    float amp[nOver2];
+//    float maxMag = 0;
+//    
+//    for(int i=0; i<nOver2; i++) {
+//        // Calculate the magnitude
+//        float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
+//        maxMag = mag > maxMag ? mag : maxMag;
+//    }
+//    for(int i=0; i<nOver2; i++) {
+//        // Calculate the magnitude
+//        float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
+//        // Bind the value to be less than 1.0 to fit in the graph
+//        amp[i] = [EZAudioUtilities MAP:mag leftMin:0.0 leftMax:maxMag rightMin:0.0 rightMax:1.0];
+//    }
+    
+    
+    
     
     // copy incoming audio data to the audio buffer
     memcpy(audioBuffer.mData, audioBufferList->mBuffers[0].mData, audioBufferList->mBuffers[0].mDataByteSize);
