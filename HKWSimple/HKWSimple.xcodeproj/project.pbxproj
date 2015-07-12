@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1785A14F1B52253B00356858 /* FFTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1785A14E1B52253B00356858 /* FFTViewController.m */; };
 		1785A1511B52276C00356858 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1501B52276C00356858 /* AVFoundation.framework */; };
 		1785A1531B52277400356858 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1521B52277400356858 /* Accelerate.framework */; };
 		1785A1551B52278000356858 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1541B52278000356858 /* GLKit.framework */; };
@@ -18,6 +17,7 @@
 		1785A1611B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
 		1785A1621B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
 		17E2C5211B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */; };
+		17E5B8841B52438B00F2BD25 /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E5B8831B52438B00F2BD25 /* AudioProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		76D40DD31B4E4AEE003904D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D40DD21B4E4AEE003904D2 /* AppDelegate.swift */; };
 		76D40DD51B4E4AEE003904D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D40DD41B4E4AEE003904D2 /* ViewController.swift */; };
 		76D40DD81B4E4AEE003904D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D40DD61B4E4AEE003904D2 /* Main.storyboard */; };
@@ -45,8 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1785A14D1B52253B00356858 /* FFTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTViewController.h; sourceTree = "<group>"; };
-		1785A14E1B52253B00356858 /* FFTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTViewController.m; sourceTree = "<group>"; };
 		1785A1501B52276C00356858 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1785A1521B52277400356858 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		1785A1541B52278000356858 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -56,6 +54,8 @@
 		1785A15C1B5227D500356858 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1785A1601B52288100356858 /* EZAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EZAudio; path = HKWSimple/EZAudio; sourceTree = "<group>"; };
 		17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1808861_Everyday_Netsky_Remix.mp3; sourceTree = "<group>"; };
+		17E5B8821B52438B00F2BD25 /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioProcessor.h; sourceTree = "<group>"; };
+		17E5B8831B52438B00F2BD25 /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioProcessor.m; sourceTree = "<group>"; };
 		76D40DCD1B4E4AEE003904D2 /* HKWSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKWSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D40DD11B4E4AEE003904D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D40DD21B4E4AEE003904D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,8 +155,8 @@
 				76D40DD91B4E4AEE003904D2 /* Images.xcassets */,
 				76D40DDB1B4E4AEE003904D2 /* LaunchScreen.xib */,
 				76D40DD01B4E4AEE003904D2 /* Supporting Files */,
-				1785A14D1B52253B00356858 /* FFTViewController.h */,
-				1785A14E1B52253B00356858 /* FFTViewController.m */,
+				17E5B8821B52438B00F2BD25 /* AudioProcessor.h */,
+				17E5B8831B52438B00F2BD25 /* AudioProcessor.m */,
 			);
 			path = HKWSimple;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				76D40DF81B4E4B86003904D2 /* GlobalConstants.swift in Sources */,
 				76D40DFA1B4E4B86003904D2 /* NowPlayingVC.swift in Sources */,
 				76D40DFC1B4E4B86003904D2 /* SpeakerSelectionTVC.swift in Sources */,
-				1785A14F1B52253B00356858 /* FFTViewController.m in Sources */,
+				17E5B8841B52438B00F2BD25 /* AudioProcessor.m in Sources */,
 				76D40DD31B4E4AEE003904D2 /* AppDelegate.swift in Sources */,
 				76D40DFB1B4E4B86003904D2 /* SongSelectionTVC.swift in Sources */,
 			);

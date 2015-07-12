@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Foundation
 
 class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     var row = 0
@@ -19,6 +20,8 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     var curVolume:Int = 50
     var songUrl = ""
     var serverUrl = ""
+    var ai: AudioProcessor = AudioProcessor()
+
 
     var g_alert: UIAlertController!
 
@@ -55,6 +58,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
 
     }
     @IBAction func volumeDown(sender: UIButton) {
+        
         curVolume -= 5
         
         if curVolume < 0 {
@@ -65,6 +69,23 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         labelAverageVolume.text = "Volume: \(curVolume)"
 
     }
+    
+    @IBAction func runMic(sender: UIButton) {
+        
+
+        ai.start()
+        
+//        curVolume -= 5
+//        
+//        if curVolume < 0 {
+//            curVolume = 0
+//        }
+//        
+//        HKWControlHandler.sharedInstance().setVolume(curVolume)
+//        labelAverageVolume.text = "Volume: \(curVolume)"
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

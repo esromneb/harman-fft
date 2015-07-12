@@ -1,13 +1,13 @@
 //
-//  FFTViewController.m
+//  AudioProcessor.h
 //  HKWSimple
 //
 //  Created by x on 7/11/15.
 //  Copyright (c) 2015 Harman International. All rights reserved.
 //
 
-#import "FFTViewController.h"
+#import <Foundation/Foundation.h>
 
-@implementation FFTViewController
+@interface AudioProcessor : NSObject
 
 @end

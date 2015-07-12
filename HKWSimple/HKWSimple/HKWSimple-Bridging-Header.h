@@ -10,3 +10,4 @@
 #import "HKWControlHandler.h"
 #import "HKWDeviceEventHandlerSingleton.h"
 #import "HKWPlayerEventHandlerSingleton.h"
+#import "AudioProcessor.h"
