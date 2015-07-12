@@ -32,11 +32,16 @@
     float gain;
     
     FFTSetup      _FFTSetup;
+    
+    float _mags[512];
 }
 
 @property (readonly) AudioBuffer audioBuffer;
 @property (readonly) AudioComponentInstance audioUnit;
 @property (nonatomic) float gain;
+@property (readonly) float *mags;
+
+//@property(readonly) float *doubleDigits;
 
 typedef struct OpaqueFFTSetup * FFTSetup;
 

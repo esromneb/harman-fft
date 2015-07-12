@@ -10,13 +10,15 @@
 
 #pragma mark Recording callback
 
+
+
 int isRunning = 0;
 
 COMPLEX_SPLIT _A;
 FFTSetup      _FFTSetup;
 BOOL          _isFFTSetup;
 vDSP_Length   _log2n;
-
+float mags[512];
 
 static OSStatus recordingCallback(void *inRefCon,
                                   AudioUnitRenderActionFlags *ioActionFlags,
@@ -96,6 +98,12 @@ static OSStatus playbackCallback(void *inRefCon,
 
 @implementation AudioProcessor
 @synthesize audioUnit, audioBuffer, gain;
+
+- (float *)mags
+{
+    return mags;
+}
+
 
 -(AudioProcessor*)init
 {
@@ -435,6 +443,7 @@ int    _log2n = 10;
         // Calculate the magnitude
         float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
         maxMag = mag > maxMag ? mag : maxMag;
+        mags[i] = mag;
     }
     
     if( called == 4 )

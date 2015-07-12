@@ -76,14 +76,14 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
 
         ai.start()
         
-//        curVolume -= 5
-//        
-//        if curVolume < 0 {
-//            curVolume = 0
-//        }
-//        
-//        HKWControlHandler.sharedInstance().setVolume(curVolume)
-//        labelAverageVolume.text = "Volume: \(curVolume)"
+
+        
+//        let sentData = message.body as NSDictionary
+//        let aCount:Int = Int(sentData["count"] as NSNumber)
+        
+//        webView!.evaluateJavaScript("upd([1,2,3] )", completionHandler: nil)
+        webView.stringByEvaluatingJavaScriptFromString("window.upd([1,2,3] )")
+        
         
     }
     
@@ -115,6 +115,14 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         let localfilePath = NSBundle.mainBundle().URLForResource("index", withExtension: "html");
         let myRequest = NSURLRequest(URL: localfilePath!);
         webView.loadRequest(myRequest);
+//        webView.all
+        
+//        
+//        var theConfiguration = WKWebViewConfiguration()
+//        theConfiguration.userContentController.addScriptMessageHandler(self,
+//            name: "interOp")
+//         var theWebView = WKWebView(frame:self.view.frame,
+//            configuration: theConfiguration)
         
         
     }
