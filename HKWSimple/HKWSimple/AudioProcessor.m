@@ -436,25 +436,25 @@ int    _log2n = 10;
     vDSP_fft_zrip(_FFTSetup, &_A, 1, _log2n, FFT_FORWARD);
 //
 //    // Convert COMPLEX_SPLIT A result to magnitudes
-    float amp[nOver2];
+//    float amp[nOver2];
     float maxMag = 0;
 
     for(int i=0; i<nOver2; i++) {
         // Calculate the magnitude
         float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
-        maxMag = mag > maxMag ? mag : maxMag;
+//        maxMag = mag > maxMag ? mag : maxMag;
         mags[i] = mag;
     }
     
-    if( called == 4 )
-    {
-        for(int i = 0; i < nOver2; i++)
-        {
-             float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
-            NSLog(@"%g",mag);
-        }
-        NSLog(@"done");
-    }
+//    if( called == 4 )
+//    {
+//        for(int i = 0; i < nOver2; i++)
+//        {
+//             float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
+//            NSLog(@"%g",mag);
+//        }
+//        NSLog(@"done");
+//    }
 //    for(int i=0; i<nOver2; i++) {
 //        // Calculate the magnitude
 //        float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];

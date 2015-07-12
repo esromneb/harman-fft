@@ -74,16 +74,11 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     @IBAction func runMic(sender: UIButton) {
         
 
-        ai.start()
+//        ai.start()
         
-
-        
-//        let sentData = message.body as NSDictionary
-//        let aCount:Int = Int(sentData["count"] as NSNumber)
-        
-//        webView!.evaluateJavaScript("upd([1,2,3] )", completionHandler: nil)
-
-        
+    }
+    
+    func update() {
         var string = "window.upd(["
         for var i = 0; i < 512; ++i {
             let fs = String(format: "%f,",ai.mags[i])
@@ -93,9 +88,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         string += "0])"
         
         
-                webView.stringByEvaluatingJavaScriptFromString(string)
-        
-        
+        webView.stringByEvaluatingJavaScriptFromString(string)
     }
     
     
@@ -126,14 +119,11 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         let localfilePath = NSBundle.mainBundle().URLForResource("index", withExtension: "html");
         let myRequest = NSURLRequest(URL: localfilePath!);
         webView.loadRequest(myRequest);
-//        webView.all
+
         
-//        
-//        var theConfiguration = WKWebViewConfiguration()
-//        theConfiguration.userContentController.addScriptMessageHandler(self,
-//            name: "interOp")
-//         var theWebView = WKWebView(frame:self.view.frame,
-//            configuration: theConfiguration)
+        ai.start()
+        
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         
         
     }
