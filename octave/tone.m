@@ -1,9 +1,6 @@
-function y = ramp (len,f)
+function y = tone (len,f)
 
 more off;
-
-#disp('starting');
-
 
 fs = 96E3;
 srate = 1/fs;
