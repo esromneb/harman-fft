@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1785A14F1B52253B00356858 /* FFTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1785A14E1B52253B00356858 /* FFTViewController.m */; };
+		1785A1511B52276C00356858 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1501B52276C00356858 /* AVFoundation.framework */; };
+		1785A1531B52277400356858 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1521B52277400356858 /* Accelerate.framework */; };
+		1785A1551B52278000356858 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1541B52278000356858 /* GLKit.framework */; };
+		1785A1571B52278900356858 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1561B52278900356858 /* AudioToolbox.framework */; };
+		1785A1591B5227AD00356858 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A1581B5227AD00356858 /* UIKit.framework */; };
+		1785A15B1B5227B800356858 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A15A1B5227B800356858 /* Foundation.framework */; };
+		1785A15D1B5227D500356858 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1785A15C1B5227D500356858 /* CoreGraphics.framework */; };
+		1785A1611B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
+		1785A1621B52288100356858 /* EZAudio in Resources */ = {isa = PBXBuildFile; fileRef = 1785A1601B52288100356858 /* EZAudio */; };
 		17E2C5211B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */; };
 		76D40DD31B4E4AEE003904D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D40DD21B4E4AEE003904D2 /* AppDelegate.swift */; };
 		76D40DD51B4E4AEE003904D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D40DD41B4E4AEE003904D2 /* ViewController.swift */; };
@@ -35,6 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1785A14D1B52253B00356858 /* FFTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTViewController.h; sourceTree = "<group>"; };
+		1785A14E1B52253B00356858 /* FFTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTViewController.m; sourceTree = "<group>"; };
+		1785A1501B52276C00356858 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1785A1521B52277400356858 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1785A1541B52278000356858 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1785A1561B52278900356858 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1785A1581B5227AD00356858 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1785A15A1B5227B800356858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1785A15C1B5227D500356858 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1785A1601B52288100356858 /* EZAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EZAudio; path = HKWSimple/EZAudio; sourceTree = "<group>"; };
 		17E2C5201B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1808861_Everyday_Netsky_Remix.mp3; sourceTree = "<group>"; };
 		76D40DCD1B4E4AEE003904D2 /* HKWSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKWSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D40DD11B4E4AEE003904D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +87,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1785A15D1B5227D500356858 /* CoreGraphics.framework in Frameworks */,
+				1785A15B1B5227B800356858 /* Foundation.framework in Frameworks */,
+				1785A1591B5227AD00356858 /* UIKit.framework in Frameworks */,
+				1785A1571B52278900356858 /* AudioToolbox.framework in Frameworks */,
+				1785A1551B52278000356858 /* GLKit.framework in Frameworks */,
+				1785A1531B52277400356858 /* Accelerate.framework in Frameworks */,
+				1785A1511B52276C00356858 /* AVFoundation.framework in Frameworks */,
 				76D40E0A1B4E4BC0003904D2 /* libbz2.dylib in Frameworks */,
 				76D40E081B4E4BB8003904D2 /* libz.dylib in Frameworks */,
 				76D40E061B4E4BA1003904D2 /* libHKWirelessHD.a in Frameworks */,
@@ -86,6 +113,14 @@
 		76D40DC41B4E4AEE003904D2 = {
 			isa = PBXGroup;
 			children = (
+				1785A1601B52288100356858 /* EZAudio */,
+				1785A15C1B5227D500356858 /* CoreGraphics.framework */,
+				1785A15A1B5227B800356858 /* Foundation.framework */,
+				1785A1581B5227AD00356858 /* UIKit.framework */,
+				1785A1561B52278900356858 /* AudioToolbox.framework */,
+				1785A1541B52278000356858 /* GLKit.framework */,
+				1785A1521B52277400356858 /* Accelerate.framework */,
+				1785A1501B52276C00356858 /* AVFoundation.framework */,
 				76D40E091B4E4BC0003904D2 /* libbz2.dylib */,
 				76D40E071B4E4BB8003904D2 /* libz.dylib */,
 				76D40DCF1B4E4AEE003904D2 /* HKWSimple */,
@@ -120,6 +155,8 @@
 				76D40DD91B4E4AEE003904D2 /* Images.xcassets */,
 				76D40DDB1B4E4AEE003904D2 /* LaunchScreen.xib */,
 				76D40DD01B4E4AEE003904D2 /* Supporting Files */,
+				1785A14D1B52253B00356858 /* FFTViewController.h */,
+				1785A14E1B52253B00356858 /* FFTViewController.m */,
 			);
 			path = HKWSimple;
 			sourceTree = "<group>";
@@ -261,6 +298,7 @@
 			files = (
 				17E2C5211B5219D100DD8A48 /* 1808861_Everyday_Netsky_Remix.mp3 in Resources */,
 				76D40DD81B4E4AEE003904D2 /* Main.storyboard in Resources */,
+				1785A1611B52288100356858 /* EZAudio in Resources */,
 				76D40DDD1B4E4AEE003904D2 /* LaunchScreen.xib in Resources */,
 				76D40DDA1B4E4AEE003904D2 /* Images.xcassets in Resources */,
 			);
@@ -270,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1785A1621B52288100356858 /* EZAudio in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +324,7 @@
 				76D40DF81B4E4B86003904D2 /* GlobalConstants.swift in Sources */,
 				76D40DFA1B4E4B86003904D2 /* NowPlayingVC.swift in Sources */,
 				76D40DFC1B4E4B86003904D2 /* SpeakerSelectionTVC.swift in Sources */,
+				1785A14F1B52253B00356858 /* FFTViewController.m in Sources */,
 				76D40DD31B4E4AEE003904D2 /* AppDelegate.swift in Sources */,
 				76D40DFB1B4E4B86003904D2 /* SongSelectionTVC.swift in Sources */,
 			);
@@ -415,6 +455,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = HKWSimple/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
