@@ -34,12 +34,14 @@
     FFTSetup      _FFTSetup;
     
     float _mags[512];
+    float updates;
 }
 
 @property (readonly) AudioBuffer audioBuffer;
 @property (readonly) AudioComponentInstance audioUnit;
 @property (nonatomic) float gain;
 @property (readonly) float *mags;
+@property (readonly) int updates;
 
 //@property(readonly) float *doubleDigits;
 

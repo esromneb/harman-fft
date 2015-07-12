@@ -19,6 +19,7 @@ FFTSetup      _FFTSetup;
 BOOL          _isFFTSetup;
 vDSP_Length   _log2n;
 float mags[512];
+int updates;
 
 static OSStatus recordingCallback(void *inRefCon,
                                   AudioUnitRenderActionFlags *ioActionFlags,
@@ -104,6 +105,11 @@ static OSStatus playbackCallback(void *inRefCon,
     return mags;
 }
 
+- (int)updates
+{
+    return updates;
+}
+
 
 -(AudioProcessor*)init
 {
@@ -114,6 +120,7 @@ static OSStatus playbackCallback(void *inRefCon,
     }
     
     isRunning = 0;
+    updates = 0;
     
     return self;
 }
@@ -374,47 +381,7 @@ int    _log2n = 10;
     
     // loop over every packet
     for (int nb = 0; nb < count; nb++) {
-        
-//        NSLog(@"%d",editBuffer[nb]);
-        
-        // we check if the gain has been modified to save resoures
-        //if (gain != 0) {
-//            // we need more accuracy in our calculation so we calculate with doubles
-//            double gainSample = ((double)editBuffer[nb]) / 32767.0;
-//            
-//            /*
-//             at this point we multiply with our gain factor
-//             we dont make a addition to prevent generation of sound where no sound is.
-//             
-//             no noise
-//             0*10=0
-//             
-//             noise if zero
-//             0+10=10
-//             */
-//            gainSample *= gain;
-//            
-//            /**
-//             our signal range cant be higher or lesser -1.0/1.0
-//             we prevent that the signal got outside our range
-//             */
-//            gainSample = (gainSample < -1.0) ? -1.0 : (gainSample > 1.0) ? 1.0 : gainSample;
-//            
-//            /*
-//             This thing here is a little helper to shape our incoming wave.
-//             The sound gets pretty warm and better and the noise is reduced a lot.
-//             Feel free to outcomment this line and here again.
-//             
-//             You can see here what happens here http://silentmatt.com/javascript-function-plotter/
-//             Copy this to the command line and hit enter: plot y=(1.5*x)-0.5*x*x*x
-//             */
-//            
-//            gainSample = (1.5 * gainSample) - 0.5 * gainSample * gainSample * gainSample;
-//            
-//            // multiply the new signal back to short 
-//            gainSample = gainSample * 32767.0;
-            
-            // write calculate sample back to the buffer
+  
 
         data[nb] = (float)editBuffer[nb];
 //        data[(nb*2)+1] = 0.0;
@@ -446,23 +413,8 @@ int    _log2n = 10;
         mags[i] = mag;
     }
     
-//    if( called == 4 )
-//    {
-//        for(int i = 0; i < nOver2; i++)
-//        {
-//             float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
-//            NSLog(@"%g",mag);
-//        }
-//        NSLog(@"done");
-//    }
-//    for(int i=0; i<nOver2; i++) {
-//        // Calculate the magnitude
-//        float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
-//        // Bind the value to be less than 1.0 to fit in the graph
-//        amp[i] = [EZAudioUtilities MAP:mag leftMin:0.0 leftMax:maxMag rightMin:0.0 rightMax:1.0];
-//    }
-    
-    
+
+    updates++;
     
     
     // copy incoming audio data to the audio buffer

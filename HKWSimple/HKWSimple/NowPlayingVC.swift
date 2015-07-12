@@ -80,7 +80,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
     
     func update() {
         var string = "window.upd(["
-        for var i = 0; i < 512; ++i {
+        for var i = 0; i < 512; i+=2 {
             let fs = String(format: "%f,",ai.mags[i])
             string += fs
         }
@@ -89,6 +89,8 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         
         
         webView.stringByEvaluatingJavaScriptFromString(string)
+//        print(ai.updates)
+//        print("\n")
     }
     
     
@@ -123,7 +125,7 @@ class NowPlayingVC: UIViewController, HKWPlayerEventHandlerDelegate {
         
         ai.start()
         
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.07, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         
         
     }
