@@ -12,6 +12,12 @@
 
 int isRunning = 0;
 
+COMPLEX_SPLIT _A;
+FFTSetup      _FFTSetup;
+BOOL          _isFFTSetup;
+vDSP_Length   _log2n;
+
+
 static OSStatus recordingCallback(void *inRefCon,
                                   AudioUnitRenderActionFlags *ioActionFlags,
                                   const AudioTimeStamp *inTimeStamp,
@@ -252,6 +258,10 @@ static OSStatus playbackCallback(void *inRefCon,
     
     int bufferSize = 1024;
     
+    _log2n = log2f(bufferSize);
+    
+    float dummy[bufferSize*2];
+    
     // setup fft
     
     _FFTSetup = vDSP_create_fftsetup(10, FFT_RADIX2);
@@ -261,16 +271,16 @@ static OSStatus playbackCallback(void *inRefCon,
 //    // For an FFT, numSamples must be a power of 2, i.e. is always even
     int nOver2 = bufferSize/2;
     
-//    // Populate *window with the values for a hamming window function
-//    float *window = (float *)malloc(sizeof(float)*bufferSize);
-//    vDSP_hamm_window(window, bufferSize, 0);
-//    // Window the samples
-//    vDSP_vmul(data, 1, window, 1, data, 1, bufferSize);
-//    free(window);
-//    
-//    // Define complex buffer
-//    _A.realp = (float *) malloc(nOver2*sizeof(float));
-//    _A.imagp = (float *) malloc(nOver2*sizeof(float));
+    // Populate *window with the values for a hamming window function
+    float *window = (float *)malloc(sizeof(float)*bufferSize);
+    vDSP_hamm_window(window, bufferSize, 0);
+    // Window the samples
+    vDSP_vmul(dummy, 1, window, 1, dummy, 1, bufferSize);
+    free(window);
+    
+    // Define complex buffer
+    _A.realp = (float *) malloc(nOver2*sizeof(float));
+    _A.imagp = (float *) malloc(nOver2*sizeof(float));
   
     
     
@@ -285,6 +295,7 @@ static OSStatus playbackCallback(void *inRefCon,
     OSStatus status = AudioOutputUnitStart(audioUnit);
     [self hasError:status:__FILE__:__LINE__];
     isRunning = 1;
+    NSLog(@"starting mic");
 }
 -(void)stop;
 {
@@ -292,6 +303,7 @@ static OSStatus playbackCallback(void *inRefCon,
     OSStatus status = AudioOutputUnitStop(audioUnit);
     [self hasError:status:__FILE__:__LINE__];
     isRunning = 0;
+    NSLog(@"ending mic");
 }
 
 -(int)running
@@ -316,8 +328,9 @@ static OSStatus playbackCallback(void *inRefCon,
 
 -(void)processBuffer: (AudioBufferList*) audioBufferList
 {
-//    static int called = 0;
+    static int called = 0;
 //    NSLog(@"cnt %d", called++);
+    called++;
     
     AudioBuffer sourceBuffer = audioBufferList->mBuffers[0];
     
@@ -340,9 +353,13 @@ static OSStatus playbackCallback(void *inRefCon,
     int count = (audioBufferList->mBuffers[0].mDataByteSize / 2);
     
     
+int    _log2n = 10;
+    int bufferSize = 1024;
+     int nOver2 = bufferSize/2;
     
     
-    
+    float data[bufferSize];
+//    float _A[bufferSize*2];
     
     
     
@@ -390,7 +407,12 @@ static OSStatus playbackCallback(void *inRefCon,
 //            gainSample = gainSample * 32767.0;
             
             // write calculate sample back to the buffer
-            editBuffer[nb] = 0;
+
+        data[nb] = (float)editBuffer[nb];
+//        data[(nb*2)+1] = 0.0;
+        
+                    editBuffer[nb] = 0;
+        
         //}
     }
     
@@ -399,21 +421,31 @@ static OSStatus playbackCallback(void *inRefCon,
 //    
 //    // Pack samples:
 //    // C(re) -> A[n], C(im) -> A[n+1]
-//    vDSP_ctoz((COMPLEX*)data, 2, &_A, 1, nOver2);
-//    
+    vDSP_ctoz((COMPLEX*)data, 2, &_A, 1, nOver2);
+//
 //    // Perform a forward FFT using fftSetup and A
 //    // Results are returned in A
-//    vDSP_fft_zrip(_FFTSetup, &_A, 1, _log2n, FFT_FORWARD);
-//    
+    vDSP_fft_zrip(_FFTSetup, &_A, 1, _log2n, FFT_FORWARD);
+//
 //    // Convert COMPLEX_SPLIT A result to magnitudes
-//    float amp[nOver2];
-//    float maxMag = 0;
-//    
-//    for(int i=0; i<nOver2; i++) {
-//        // Calculate the magnitude
-//        float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
-//        maxMag = mag > maxMag ? mag : maxMag;
-//    }
+    float amp[nOver2];
+    float maxMag = 0;
+
+    for(int i=0; i<nOver2; i++) {
+        // Calculate the magnitude
+        float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
+        maxMag = mag > maxMag ? mag : maxMag;
+    }
+    
+    if( called == 4 )
+    {
+        for(int i = 0; i < nOver2; i++)
+        {
+             float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
+            NSLog(@"%g",mag);
+        }
+        NSLog(@"done");
+    }
 //    for(int i=0; i<nOver2; i++) {
 //        // Calculate the magnitude
 //        float mag = _A.realp[i]*_A.realp[i]+_A.imagp[i]*_A.imagp[i];
