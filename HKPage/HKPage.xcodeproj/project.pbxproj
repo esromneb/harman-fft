@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7625C0091A92ACBB00F5CFFC /* SelectAlarmSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625C0081A92ACBB00F5CFFC /* SelectAlarmSoundViewController.swift */; };
+		7625C00B1A92AF1600F5CFFC /* AlarmSoundSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625C00A1A92AF1600F5CFFC /* AlarmSoundSelectionTableViewCell.swift */; };
+		7625C00D1A92B53D00F5CFFC /* Siren-28s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7625C00C1A92B53D00F5CFFC /* Siren-28s.mp3 */; };
+		7625C00F1A92B54C00F5CFFC /* Red Alert-30s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7625C00E1A92B54C00F5CFFC /* Red Alert-30s.mp3 */; };
+		7625C0111A92B56400F5CFFC /* Tornado Siren-45s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7625C0101A92B56400F5CFFC /* Tornado Siren-45s.mp3 */; };
+		76320FE51AAB94B40095B870 /* RadarSearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76320FE41AAB94B40095B870 /* RadarSearchingViewController.swift */; };
+		7635F7DE1A8448DC00FC08CE /* RoomSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7635F7DD1A8448DC00FC08CE /* RoomSelectionTableViewCell.swift */; };
+		7639055F1B4B8C7700951C02 /* libHKWirelessHDlw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7639055C1B4B8C7700951C02 /* libHKWirelessHDlw.a */; };
+		765E1D421ABA51A9001221A9 /* StreamingActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765E1D411ABA51A9001221A9 /* StreamingActivityView.swift */; };
+		765FD3441AE713D200D8029F /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 765FD3401AE713D200D8029F /* MyriadPro-Bold.otf */; };
+		765FD3451AE713D200D8029F /* MyriadPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 765FD3411AE713D200D8029F /* MyriadPro-Light.otf */; };
+		765FD3461AE713D200D8029F /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 765FD3421AE713D200D8029F /* MyriadPro-Regular.otf */; };
+		765FD3471AE713D200D8029F /* MyriadPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 765FD3431AE713D200D8029F /* MyriadPro-Semibold.otf */; };
+		76A9ED251B0E4FF7008382D0 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9ED241B0E4FF7008382D0 /* GlobalConstants.swift */; };
+		76AF30061A931DEA00A1108A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AF30051A931DEA00A1108A /* AboutViewController.swift */; };
+		76BC501F1A69F11E00CC9396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC501E1A69F11E00CC9396 /* AppDelegate.swift */; };
+		76BC50221A69F11E00CC9396 /* HKPage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50201A69F11E00CC9396 /* HKPage.xcdatamodeld */; };
+		76BC50271A69F11E00CC9396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BC50251A69F11E00CC9396 /* Main.storyboard */; };
+		76BC50291A69F11E00CC9396 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BC50281A69F11E00CC9396 /* Images.xcassets */; };
+		76BC502C1A69F11E00CC9396 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BC502A1A69F11E00CC9396 /* LaunchScreen.xib */; };
+		76BC50381A69F11E00CC9396 /* HKPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50371A69F11E00CC9396 /* HKPageTests.swift */; };
+		76BC50611A69F1C000CC9396 /* BlankSpeakerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50411A69F1C000CC9396 /* BlankSpeakerListViewController.swift */; };
+		76BC50621A69F1C000CC9396 /* BlueTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50421A69F1C000CC9396 /* BlueTabButton.swift */; };
+		76BC50631A69F1C000CC9396 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50431A69F1C000CC9396 /* CustomTextView.swift */; };
+		76BC50661A69F1C000CC9396 /* EmptySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50461A69F1C000CC9396 /* EmptySegue.swift */; };
+		76BC50681A69F1C000CC9396 /* HouseAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50491A69F1C000CC9396 /* HouseAlertViewController.swift */; };
+		76BC50691A69F1C000CC9396 /* MenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC504A1A69F1C000CC9396 /* MenuContainerViewController.swift */; };
+		76BC506A1A69F1C000CC9396 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC504B1A69F1C000CC9396 /* MenuViewController.swift */; };
+		76BC506F1A69F1C000CC9396 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50501A69F1C000CC9396 /* RoomListViewController.swift */; };
+		76BC50701A69F1C000CC9396 /* RoomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50511A69F1C000CC9396 /* RoomTableCell.swift */; };
+		76BC50711A69F1C000CC9396 /* RotatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50521A69F1C000CC9396 /* RotatedImageView.swift */; };
+		76BC50721A69F1C000CC9396 /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50531A69F1C000CC9396 /* SearchingViewController.swift */; };
+		76BC50781A69F1C000CC9396 /* SpeakerListContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC50591A69F1C000CC9396 /* SpeakerListContainerViewController.swift */; };
+		76BC50791A69F1C000CC9396 /* SpeakerListTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC505A1A69F1C000CC9396 /* SpeakerListTabViewController.swift */; };
+		76BC507A1A69F1C000CC9396 /* SpeakerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC505B1A69F1C000CC9396 /* SpeakerListViewController.swift */; };
+		76BC507B1A69F1C000CC9396 /* SpeakerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC505C1A69F1C000CC9396 /* SpeakerTableCell.swift */; };
+		76BC507C1A69F1C000CC9396 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC505D1A69F1C000CC9396 /* SplashViewController.swift */; };
+		76C58D4E1A83FF53000B4CFC /* SelectRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C58D4D1A83FF53000B4CFC /* SelectRoomViewController.swift */; };
+		76C678481A899F7A009BF9B9 /* VoiceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C678471A899F7A009BF9B9 /* VoiceRecorder.swift */; };
+		76C6784A1A89C164009BF9B9 /* EditSpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C678491A89C164009BF9B9 /* EditSpeakerViewController.swift */; };
+		76FAF5A61A8AA6CC00E2F3FE /* Industrial Alarm-30s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76FAF5A51A8AA6CC00E2F3FE /* Industrial Alarm-30s.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76BC50321A69F11E00CC9396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76BC50111A69F11D00CC9396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76BC50181A69F11E00CC9396;
+			remoteInfo = HKPage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7625C0081A92ACBB00F5CFFC /* SelectAlarmSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAlarmSoundViewController.swift; sourceTree = "<group>"; };
+		7625C00A1A92AF1600F5CFFC /* AlarmSoundSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSoundSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		7625C00C1A92B53D00F5CFFC /* Siren-28s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Siren-28s.mp3"; sourceTree = "<group>"; };
+		7625C00E1A92B54C00F5CFFC /* Red Alert-30s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Red Alert-30s.mp3"; sourceTree = "<group>"; };
+		7625C0101A92B56400F5CFFC /* Tornado Siren-45s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tornado Siren-45s.mp3"; sourceTree = "<group>"; };
+		76320FE41AAB94B40095B870 /* RadarSearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarSearchingViewController.swift; sourceTree = "<group>"; };
+		7635F7DD1A8448DC00FC08CE /* RoomSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		763905561B4B8C7700951C02 /* DeviceGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroup.h; sourceTree = "<group>"; };
+		763905571B4B8C7700951C02 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		763905581B4B8C7700951C02 /* HKWControlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWControlHandler.h; sourceTree = "<group>"; };
+		763905591B4B8C7700951C02 /* HKWDeviceEventHandlerSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWDeviceEventHandlerSingleton.h; sourceTree = "<group>"; };
+		7639055A1B4B8C7700951C02 /* HKWPlayerEventHandlerSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWPlayerEventHandlerSingleton.h; sourceTree = "<group>"; };
+		7639055C1B4B8C7700951C02 /* libHKWirelessHDlw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHKWirelessHDlw.a; sourceTree = "<group>"; };
+		765E1D411ABA51A9001221A9 /* StreamingActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingActivityView.swift; sourceTree = "<group>"; };
+		765FD3401AE713D200D8029F /* MyriadPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.otf"; sourceTree = "<group>"; };
+		765FD3411AE713D200D8029F /* MyriadPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Light.otf"; sourceTree = "<group>"; };
+		765FD3421AE713D200D8029F /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		765FD3431AE713D200D8029F /* MyriadPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.otf"; sourceTree = "<group>"; };
+		76A9ED241B0E4FF7008382D0 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		76AF30051A931DEA00A1108A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		76BC50191A69F11E00CC9396 /* HKPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BC501D1A69F11E00CC9396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BC501E1A69F11E00CC9396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76BC50211A69F11E00CC9396 /* HKPage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HKPage.xcdatamodel; sourceTree = "<group>"; };
+		76BC50261A69F11E00CC9396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76BC50281A69F11E00CC9396 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		76BC502B1A69F11E00CC9396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		76BC50311A69F11E00CC9396 /* HKPageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKPageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BC50361A69F11E00CC9396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BC50371A69F11E00CC9396 /* HKPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPageTests.swift; sourceTree = "<group>"; };
+		76BC50411A69F1C000CC9396 /* BlankSpeakerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankSpeakerListViewController.swift; sourceTree = "<group>"; };
+		76BC50421A69F1C000CC9396 /* BlueTabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueTabButton.swift; sourceTree = "<group>"; };
+		76BC50431A69F1C000CC9396 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		76BC50461A69F1C000CC9396 /* EmptySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptySegue.swift; sourceTree = "<group>"; };
+		76BC50471A69F1C000CC9396 /* HKPage-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKPage-Bridging-Header.h"; sourceTree = "<group>"; };
+		76BC50491A69F1C000CC9396 /* HouseAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseAlertViewController.swift; sourceTree = "<group>"; };
+		76BC504A1A69F1C000CC9396 /* MenuContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuContainerViewController.swift; sourceTree = "<group>"; };
+		76BC504B1A69F1C000CC9396 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		76BC50501A69F1C000CC9396 /* RoomListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
+		76BC50511A69F1C000CC9396 /* RoomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableCell.swift; sourceTree = "<group>"; };
+		76BC50521A69F1C000CC9396 /* RotatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatedImageView.swift; sourceTree = "<group>"; };
+		76BC50531A69F1C000CC9396 /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
+		76BC50591A69F1C000CC9396 /* SpeakerListContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListContainerViewController.swift; sourceTree = "<group>"; };
+		76BC505A1A69F1C000CC9396 /* SpeakerListTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListTabViewController.swift; sourceTree = "<group>"; };
+		76BC505B1A69F1C000CC9396 /* SpeakerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListViewController.swift; sourceTree = "<group>"; };
+		76BC505C1A69F1C000CC9396 /* SpeakerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableCell.swift; sourceTree = "<group>"; };
+		76BC505D1A69F1C000CC9396 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		76C58D4D1A83FF53000B4CFC /* SelectRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRoomViewController.swift; sourceTree = "<group>"; };
+		76C678471A899F7A009BF9B9 /* VoiceRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceRecorder.swift; sourceTree = "<group>"; };
+		76C678491A89C164009BF9B9 /* EditSpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSpeakerViewController.swift; sourceTree = "<group>"; };
+		76FAF5A51A8AA6CC00E2F3FE /* Industrial Alarm-30s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Industrial Alarm-30s.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76BC50161A69F11E00CC9396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7639055F1B4B8C7700951C02 /* libHKWirelessHDlw.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC502E1A69F11E00CC9396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		763905541B4B8C7700951C02 /* HKWirelessHDSDKlw */ = {
+			isa = PBXGroup;
+			children = (
+				763905551B4B8C7700951C02 /* include */,
+				7639055B1B4B8C7700951C02 /* lib */,
+			);
+			path = HKWirelessHDSDKlw;
+			sourceTree = "<group>";
+		};
+		763905551B4B8C7700951C02 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				763905561B4B8C7700951C02 /* DeviceGroup.h */,
+				763905571B4B8C7700951C02 /* DeviceInfo.h */,
+				763905581B4B8C7700951C02 /* HKWControlHandler.h */,
+				763905591B4B8C7700951C02 /* HKWDeviceEventHandlerSingleton.h */,
+				7639055A1B4B8C7700951C02 /* HKWPlayerEventHandlerSingleton.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		7639055B1B4B8C7700951C02 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7639055C1B4B8C7700951C02 /* libHKWirelessHDlw.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		765E1D431ABB94AF001221A9 /* TavleViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7625C00A1A92AF1600F5CFFC /* AlarmSoundSelectionTableViewCell.swift */,
+				76BC505C1A69F1C000CC9396 /* SpeakerTableCell.swift */,
+				76BC50511A69F1C000CC9396 /* RoomTableCell.swift */,
+				7635F7DD1A8448DC00FC08CE /* RoomSelectionTableViewCell.swift */,
+			);
+			name = TavleViewCell;
+			sourceTree = "<group>";
+		};
+		765E1D441ABB94C7001221A9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				76AF30051A931DEA00A1108A /* AboutViewController.swift */,
+				76BC50411A69F1C000CC9396 /* BlankSpeakerListViewController.swift */,
+				76C678491A89C164009BF9B9 /* EditSpeakerViewController.swift */,
+				76BC50491A69F1C000CC9396 /* HouseAlertViewController.swift */,
+				76BC504A1A69F1C000CC9396 /* MenuContainerViewController.swift */,
+				76320FE41AAB94B40095B870 /* RadarSearchingViewController.swift */,
+				76BC50501A69F1C000CC9396 /* RoomListViewController.swift */,
+				76BC50531A69F1C000CC9396 /* SearchingViewController.swift */,
+				7625C0081A92ACBB00F5CFFC /* SelectAlarmSoundViewController.swift */,
+				76C58D4D1A83FF53000B4CFC /* SelectRoomViewController.swift */,
+				76BC50591A69F1C000CC9396 /* SpeakerListContainerViewController.swift */,
+				76BC504B1A69F1C000CC9396 /* MenuViewController.swift */,
+				76BC505A1A69F1C000CC9396 /* SpeakerListTabViewController.swift */,
+				76BC505B1A69F1C000CC9396 /* SpeakerListViewController.swift */,
+				76BC505D1A69F1C000CC9396 /* SplashViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		765FD33F1AE713D200D8029F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				765FD3401AE713D200D8029F /* MyriadPro-Bold.otf */,
+				765FD3411AE713D200D8029F /* MyriadPro-Light.otf */,
+				765FD3421AE713D200D8029F /* MyriadPro-Regular.otf */,
+				765FD3431AE713D200D8029F /* MyriadPro-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		76BC50101A69F11D00CC9396 = {
+			isa = PBXGroup;
+			children = (
+				76BC501B1A69F11E00CC9396 /* HKPage */,
+				76BC50341A69F11E00CC9396 /* HKPageTests */,
+				76BC501A1A69F11E00CC9396 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76BC501A1A69F11E00CC9396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76BC50191A69F11E00CC9396 /* HKPage.app */,
+				76BC50311A69F11E00CC9396 /* HKPageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76BC501B1A69F11E00CC9396 /* HKPage */ = {
+			isa = PBXGroup;
+			children = (
+				763905541B4B8C7700951C02 /* HKWirelessHDSDKlw */,
+				765E1D441ABB94C7001221A9 /* ViewController */,
+				765E1D431ABB94AF001221A9 /* TavleViewCell */,
+				76BC501E1A69F11E00CC9396 /* AppDelegate.swift */,
+				76A9ED241B0E4FF7008382D0 /* GlobalConstants.swift */,
+				76BC50421A69F1C000CC9396 /* BlueTabButton.swift */,
+				76BC50431A69F1C000CC9396 /* CustomTextView.swift */,
+				76BC50461A69F1C000CC9396 /* EmptySegue.swift */,
+				76BC50471A69F1C000CC9396 /* HKPage-Bridging-Header.h */,
+				76BC50201A69F11E00CC9396 /* HKPage.xcdatamodeld */,
+				76BC50281A69F11E00CC9396 /* Images.xcassets */,
+				76BC502A1A69F11E00CC9396 /* LaunchScreen.xib */,
+				76BC50251A69F11E00CC9396 /* Main.storyboard */,
+				765E1D411ABA51A9001221A9 /* StreamingActivityView.swift */,
+				76BC50521A69F1C000CC9396 /* RotatedImageView.swift */,
+				76BC501C1A69F11E00CC9396 /* Supporting Files */,
+				76C678471A899F7A009BF9B9 /* VoiceRecorder.swift */,
+			);
+			path = HKPage;
+			sourceTree = "<group>";
+		};
+		76BC501C1A69F11E00CC9396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				765FD33F1AE713D200D8029F /* Fonts */,
+				7625C00E1A92B54C00F5CFFC /* Red Alert-30s.mp3 */,
+				7625C0101A92B56400F5CFFC /* Tornado Siren-45s.mp3 */,
+				7625C00C1A92B53D00F5CFFC /* Siren-28s.mp3 */,
+				76FAF5A51A8AA6CC00E2F3FE /* Industrial Alarm-30s.mp3 */,
+				76BC501D1A69F11E00CC9396 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76BC50341A69F11E00CC9396 /* HKPageTests */ = {
+			isa = PBXGroup;
+			children = (
+				76BC50371A69F11E00CC9396 /* HKPageTests.swift */,
+				76BC50351A69F11E00CC9396 /* Supporting Files */,
+			);
+			path = HKPageTests;
+			sourceTree = "<group>";
+		};
+		76BC50351A69F11E00CC9396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76BC50361A69F11E00CC9396 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76BC50181A69F11E00CC9396 /* HKPage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BC503B1A69F11E00CC9396 /* Build configuration list for PBXNativeTarget "HKPage" */;
+			buildPhases = (
+				76BC50151A69F11E00CC9396 /* Sources */,
+				76BC50161A69F11E00CC9396 /* Frameworks */,
+				76BC50171A69F11E00CC9396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKPage;
+			productName = HKPage;
+			productReference = 76BC50191A69F11E00CC9396 /* HKPage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76BC50301A69F11E00CC9396 /* HKPageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BC503E1A69F11E00CC9396 /* Build configuration list for PBXNativeTarget "HKPageTests" */;
+			buildPhases = (
+				76BC502D1A69F11E00CC9396 /* Sources */,
+				76BC502E1A69F11E00CC9396 /* Frameworks */,
+				76BC502F1A69F11E00CC9396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76BC50331A69F11E00CC9396 /* PBXTargetDependency */,
+			);
+			name = HKPageTests;
+			productName = HKPageTests;
+			productReference = 76BC50311A69F11E00CC9396 /* HKPageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76BC50111A69F11D00CC9396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Harman International";
+				TargetAttributes = {
+					76BC50181A69F11E00CC9396 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3R3T22S5TT;
+					};
+					76BC50301A69F11E00CC9396 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 76BC50181A69F11E00CC9396;
+					};
+				};
+			};
+			buildConfigurationList = 76BC50141A69F11D00CC9396 /* Build configuration list for PBXProject "HKPage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76BC50101A69F11D00CC9396;
+			productRefGroup = 76BC501A1A69F11E00CC9396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76BC50181A69F11E00CC9396 /* HKPage */,
+				76BC50301A69F11E00CC9396 /* HKPageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76BC50171A69F11E00CC9396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7625C00D1A92B53D00F5CFFC /* Siren-28s.mp3 in Resources */,
+				76FAF5A61A8AA6CC00E2F3FE /* Industrial Alarm-30s.mp3 in Resources */,
+				76BC50271A69F11E00CC9396 /* Main.storyboard in Resources */,
+				7625C0111A92B56400F5CFFC /* Tornado Siren-45s.mp3 in Resources */,
+				7625C00F1A92B54C00F5CFFC /* Red Alert-30s.mp3 in Resources */,
+				765FD3471AE713D200D8029F /* MyriadPro-Semibold.otf in Resources */,
+				76BC502C1A69F11E00CC9396 /* LaunchScreen.xib in Resources */,
+				765FD3461AE713D200D8029F /* MyriadPro-Regular.otf in Resources */,
+				765FD3441AE713D200D8029F /* MyriadPro-Bold.otf in Resources */,
+				76BC50291A69F11E00CC9396 /* Images.xcassets in Resources */,
+				765FD3451AE713D200D8029F /* MyriadPro-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC502F1A69F11E00CC9396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76BC50151A69F11E00CC9396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76C678481A899F7A009BF9B9 /* VoiceRecorder.swift in Sources */,
+				76BC507A1A69F1C000CC9396 /* SpeakerListViewController.swift in Sources */,
+				76BC50611A69F1C000CC9396 /* BlankSpeakerListViewController.swift in Sources */,
+				76BC50691A69F1C000CC9396 /* MenuContainerViewController.swift in Sources */,
+				76C6784A1A89C164009BF9B9 /* EditSpeakerViewController.swift in Sources */,
+				76BC50631A69F1C000CC9396 /* CustomTextView.swift in Sources */,
+				76C58D4E1A83FF53000B4CFC /* SelectRoomViewController.swift in Sources */,
+				76BC50621A69F1C000CC9396 /* BlueTabButton.swift in Sources */,
+				76320FE51AAB94B40095B870 /* RadarSearchingViewController.swift in Sources */,
+				76BC507C1A69F1C000CC9396 /* SplashViewController.swift in Sources */,
+				765E1D421ABA51A9001221A9 /* StreamingActivityView.swift in Sources */,
+				76BC50661A69F1C000CC9396 /* EmptySegue.swift in Sources */,
+				76BC50791A69F1C000CC9396 /* SpeakerListTabViewController.swift in Sources */,
+				7625C00B1A92AF1600F5CFFC /* AlarmSoundSelectionTableViewCell.swift in Sources */,
+				7635F7DE1A8448DC00FC08CE /* RoomSelectionTableViewCell.swift in Sources */,
+				7625C0091A92ACBB00F5CFFC /* SelectAlarmSoundViewController.swift in Sources */,
+				76BC507B1A69F1C000CC9396 /* SpeakerTableCell.swift in Sources */,
+				76BC501F1A69F11E00CC9396 /* AppDelegate.swift in Sources */,
+				76A9ED251B0E4FF7008382D0 /* GlobalConstants.swift in Sources */,
+				76BC506A1A69F1C000CC9396 /* MenuViewController.swift in Sources */,
+				76BC50701A69F1C000CC9396 /* RoomTableCell.swift in Sources */,
+				76BC50681A69F1C000CC9396 /* HouseAlertViewController.swift in Sources */,
+				76BC506F1A69F1C000CC9396 /* RoomListViewController.swift in Sources */,
+				76BC50721A69F1C000CC9396 /* SearchingViewController.swift in Sources */,
+				76BC50781A69F1C000CC9396 /* SpeakerListContainerViewController.swift in Sources */,
+				76BC50221A69F11E00CC9396 /* HKPage.xcdatamodeld in Sources */,
+				76AF30061A931DEA00A1108A /* AboutViewController.swift in Sources */,
+				76BC50711A69F1C000CC9396 /* RotatedImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC502D1A69F11E00CC9396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BC50381A69F11E00CC9396 /* HKPageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76BC50331A69F11E00CC9396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76BC50181A69F11E00CC9396 /* HKPage */;
+			targetProxy = 76BC50321A69F11E00CC9396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76BC50251A69F11E00CC9396 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BC50261A69F11E00CC9396 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76BC502A1A69F11E00CC9396 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BC502B1A69F11E00CC9396 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76BC50391A69F11E00CC9396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../HKWirelessHDSDK/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "HKPage/HKPage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76BC503A1A69F11E00CC9396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../HKWirelessHDSDK/include;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "HKPage/HKPage-Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76BC503C1A69F11E00CC9396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = HKPage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/HKPage/HKWirelessHDSDKlw/include",
+					"$(PROJECT_DIR)/HKPage/HKWirelessHDSDKlw/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		76BC503D1A69F11E00CC9396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = HKPage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/HKPage/HKWirelessHDSDKlw/include",
+					"$(PROJECT_DIR)/HKPage/HKWirelessHDSDKlw/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		76BC503F1A69F11E00CC9396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HKPageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKPage.app/HKPage";
+			};
+			name = Debug;
+		};
+		76BC50401A69F11E00CC9396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HKPageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKPage.app/HKPage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76BC50141A69F11D00CC9396 /* Build configuration list for PBXProject "HKPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC50391A69F11E00CC9396 /* Debug */,
+				76BC503A1A69F11E00CC9396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BC503B1A69F11E00CC9396 /* Build configuration list for PBXNativeTarget "HKPage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC503C1A69F11E00CC9396 /* Debug */,
+				76BC503D1A69F11E00CC9396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BC503E1A69F11E00CC9396 /* Build configuration list for PBXNativeTarget "HKPageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BC503F1A69F11E00CC9396 /* Debug */,
+				76BC50401A69F11E00CC9396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		76BC50201A69F11E00CC9396 /* HKPage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				76BC50211A69F11E00CC9396 /* HKPage.xcdatamodel */,
+			);
+			currentVersion = 76BC50211A69F11E00CC9396 /* HKPage.xcdatamodel */;
+			path = HKPage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 76BC50111A69F11D00CC9396 /* Project object */;
+}

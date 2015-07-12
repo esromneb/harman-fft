@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mCW-DG-aDD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_Page" translatesAutoresizingMaskIntoConstraints="NO" id="1kq-7U-xo0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1kq-7U-xo0" firstAttribute="leading" secondItem="mCW-DG-aDD" secondAttribute="leading" id="1By-bP-aVV"/>
+                <constraint firstAttribute="bottom" secondItem="1kq-7U-xo0" secondAttribute="bottom" id="1Hn-MA-XB3"/>
+                <constraint firstAttribute="trailing" secondItem="1kq-7U-xo0" secondAttribute="trailing" id="MQ2-fr-4ef"/>
+                <constraint firstItem="1kq-7U-xo0" firstAttribute="top" secondItem="mCW-DG-aDD" secondAttribute="top" id="qEy-Zv-3R5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Splash_Page" width="375" height="667"/>
+    </resources>
+</document>

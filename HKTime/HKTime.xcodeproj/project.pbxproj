@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		760D6FAB1AA66AC200448BC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760D6FAA1AA66AC200448BC4 /* Images.xcassets */; };
+		760D6FAE1AA66AC200448BC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760D6FAC1AA66AC200448BC4 /* LaunchScreen.xib */; };
+		760D6FBA1AA66AC300448BC4 /* HKTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D6FB91AA66AC300448BC4 /* HKTimeTests.swift */; };
+		762E26EC1AA9019F00204AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762E26EB1AA9019F00204AD3 /* Main.storyboard */; };
+		762E26EE1AA9046800204AD3 /* TimeEditingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762E26ED1AA9046800204AD3 /* TimeEditingTableViewCell.swift */; };
+		762E26F01AAA887700204AD3 /* RadarSearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762E26EF1AAA887700204AD3 /* RadarSearchingViewController.swift */; };
+		7639056D1B4B8D3000951C02 /* libHKWirelessHDlw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7639056A1B4B8D3000951C02 /* libHKWirelessHDlw.a */; };
+		763EB6AF1AA7D0EF006CACBC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6AE1AA7D0EF006CACBC /* SplashViewController.swift */; };
+		763EB6B31AA7D17E006CACBC /* MMPDeepSleepPreventer.m in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6B21AA7D17E006CACBC /* MMPDeepSleepPreventer.m */; };
+		763EB6B71AA7D757006CACBC /* EditSpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6B61AA7D757006CACBC /* EditSpeakerViewController.swift */; };
+		763EB6B91AA7D868006CACBC /* SelectRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6B81AA7D868006CACBC /* SelectRoomViewController.swift */; };
+		763EB6BB1AA7D8B4006CACBC /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6BA1AA7D8B4006CACBC /* RoomListViewController.swift */; };
+		763EB6BD1AA7DA0A006CACBC /* SpeakerListContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6BC1AA7DA0A006CACBC /* SpeakerListContainerViewController.swift */; };
+		763EB6BF1AA7DA53006CACBC /* SpeakerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6BE1AA7DA53006CACBC /* SpeakerListViewController.swift */; };
+		763EB6C11AA7DACF006CACBC /* RoomSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6C01AA7DACF006CACBC /* RoomSelectionTableViewCell.swift */; };
+		763EB6C31AA7DB7B006CACBC /* SpeakerListTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6C21AA7DB7B006CACBC /* SpeakerListTabViewController.swift */; };
+		763EB6C71AA7DBCC006CACBC /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6C61AA7DBCC006CACBC /* SearchingViewController.swift */; };
+		763EB6C91AA7E25F006CACBC /* MMPSilence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 763EB6C81AA7E25F006CACBC /* MMPSilence.wav */; };
+		763EB6CB1AA7E483006CACBC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6CA1AA7E483006CACBC /* MenuViewController.swift */; };
+		763EB6CD1AA7E658006CACBC /* SpeakerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6CC1AA7E658006CACBC /* SpeakerTableCell.swift */; };
+		763EB6CF1AA83096006CACBC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EB6CE1AA83096006CACBC /* AboutViewController.swift */; };
+		764E27B41AA66B7900CCF010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27801AA66B7900CCF010 /* AppDelegate.swift */; };
+		764E27B61AA66B7900CCF010 /* BlankSpeakerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27821AA66B7900CCF010 /* BlankSpeakerListViewController.swift */; };
+		764E27B71AA66B7900CCF010 /* BlueTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27831AA66B7900CCF010 /* BlueTabButton.swift */; };
+		764E27B91AA66B7900CCF010 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27851AA66B7900CCF010 /* CoreDataHandler.swift */; };
+		764E27BA1AA66B7900CCF010 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27861AA66B7900CCF010 /* CustomPickerView.swift */; };
+		764E27BB1AA66B7900CCF010 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27871AA66B7900CCF010 /* CustomSwitch.swift */; };
+		764E27BC1AA66B7900CCF010 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27881AA66B7900CCF010 /* CustomTableViewCell.swift */; };
+		764E27BD1AA66B7900CCF010 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27891AA66B7900CCF010 /* CustomTextView.swift */; };
+		764E27BE1AA66B7900CCF010 /* DeleteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E278A1AA66B7900CCF010 /* DeleteTableViewCell.swift */; };
+		764E27BF1AA66B7900CCF010 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E278B1AA66B7900CCF010 /* DetailsTableViewCell.swift */; };
+		764E27C11AA66B7900CCF010 /* EditTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E278D1AA66B7900CCF010 /* EditTimerViewController.swift */; };
+		764E27C21AA66B7900CCF010 /* EmptySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E278E1AA66B7900CCF010 /* EmptySegue.swift */; };
+		764E27C41AA66B7900CCF010 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27901AA66B7900CCF010 /* Helper.swift */; };
+		764E27C51AA66B7900CCF010 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27911AA66B7900CCF010 /* HomeViewController.swift */; };
+		764E27C71AA66B7900CCF010 /* MenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27931AA66B7900CCF010 /* MenuContainerViewController.swift */; };
+		764E27CB1AA66B7900CCF010 /* PressableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27971AA66B7900CCF010 /* PressableImageView.swift */; };
+		764E27CF1AA66B7900CCF010 /* RoomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E279B1AA66B7900CCF010 /* RoomTableCell.swift */; };
+		764E27D01AA66B7900CCF010 /* RotatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E279C1AA66B7900CCF010 /* RotatedImageView.swift */; };
+		764E27D71AA66B7900CCF010 /* SpeakerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27A31AA66B7900CCF010 /* SpeakerImageView.swift */; };
+		764E27DC1AA66B7900CCF010 /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27A81AA66B7900CCF010 /* SpeakerTableViewCell.swift */; };
+		764E27DF1AA66B7900CCF010 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27AB1AA66B7900CCF010 /* Timer.swift */; };
+		764E27E01AA66B7900CCF010 /* TimerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27AC1AA66B7900CCF010 /* TimerTableViewCell.swift */; };
+		764E27E11AA66B7900CCF010 /* TmpTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E27AD1AA66B7900CCF010 /* TmpTimer.swift */; };
+		764E27EC1AA6770A00CCF010 /* HKTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 764E27EA1AA6770A00CCF010 /* HKTime.xcdatamodeld */; };
+		7664B58B1ABCB2BA0056EA78 /* StreamingActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664B58A1ABCB2BA0056EA78 /* StreamingActivityView.swift */; };
+		76A9ED291B0E5892008382D0 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A9ED281B0E5892008382D0 /* GlobalConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		760D6FB41AA66AC300448BC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 760D6F931AA66AC200448BC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 760D6F9A1AA66AC200448BC4;
+			remoteInfo = HKTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		760D6F9B1AA66AC200448BC4 /* HKTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		760D6F9F1AA66AC200448BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760D6FAA1AA66AC200448BC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		760D6FAD1AA66AC200448BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		760D6FB31AA66AC300448BC4 /* HKTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		760D6FB81AA66AC300448BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760D6FB91AA66AC300448BC4 /* HKTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKTimeTests.swift; sourceTree = "<group>"; };
+		762E26EB1AA9019F00204AD3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		762E26ED1AA9046800204AD3 /* TimeEditingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeEditingTableViewCell.swift; sourceTree = "<group>"; };
+		762E26EF1AAA887700204AD3 /* RadarSearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarSearchingViewController.swift; sourceTree = "<group>"; };
+		763905641B4B8D3000951C02 /* DeviceGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroup.h; sourceTree = "<group>"; };
+		763905651B4B8D3000951C02 /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		763905661B4B8D3000951C02 /* HKWControlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWControlHandler.h; sourceTree = "<group>"; };
+		763905671B4B8D3000951C02 /* HKWDeviceEventHandlerSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWDeviceEventHandlerSingleton.h; sourceTree = "<group>"; };
+		763905681B4B8D3000951C02 /* HKWPlayerEventHandlerSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWPlayerEventHandlerSingleton.h; sourceTree = "<group>"; };
+		7639056A1B4B8D3000951C02 /* libHKWirelessHDlw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHKWirelessHDlw.a; sourceTree = "<group>"; };
+		763EB6AE1AA7D0EF006CACBC /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		763EB6B01AA7D17D006CACBC /* HKTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HKTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		763EB6B11AA7D17E006CACBC /* MMPDeepSleepPreventer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPDeepSleepPreventer.h; sourceTree = "<group>"; };
+		763EB6B21AA7D17E006CACBC /* MMPDeepSleepPreventer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPDeepSleepPreventer.m; sourceTree = "<group>"; };
+		763EB6B61AA7D757006CACBC /* EditSpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSpeakerViewController.swift; sourceTree = "<group>"; };
+		763EB6B81AA7D868006CACBC /* SelectRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRoomViewController.swift; sourceTree = "<group>"; };
+		763EB6BA1AA7D8B4006CACBC /* RoomListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
+		763EB6BC1AA7DA0A006CACBC /* SpeakerListContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListContainerViewController.swift; sourceTree = "<group>"; };
+		763EB6BE1AA7DA53006CACBC /* SpeakerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListViewController.swift; sourceTree = "<group>"; };
+		763EB6C01AA7DACF006CACBC /* RoomSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		763EB6C21AA7DB7B006CACBC /* SpeakerListTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerListTabViewController.swift; sourceTree = "<group>"; };
+		763EB6C61AA7DBCC006CACBC /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
+		763EB6C81AA7E25F006CACBC /* MMPSilence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MMPSilence.wav; sourceTree = "<group>"; };
+		763EB6CA1AA7E483006CACBC /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		763EB6CC1AA7E658006CACBC /* SpeakerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableCell.swift; sourceTree = "<group>"; };
+		763EB6CE1AA83096006CACBC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		764E27801AA66B7900CCF010 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		764E27821AA66B7900CCF010 /* BlankSpeakerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankSpeakerListViewController.swift; sourceTree = "<group>"; };
+		764E27831AA66B7900CCF010 /* BlueTabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueTabButton.swift; sourceTree = "<group>"; };
+		764E27851AA66B7900CCF010 /* CoreDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		764E27861AA66B7900CCF010 /* CustomPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		764E27871AA66B7900CCF010 /* CustomSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
+		764E27881AA66B7900CCF010 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		764E27891AA66B7900CCF010 /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		764E278A1AA66B7900CCF010 /* DeleteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteTableViewCell.swift; sourceTree = "<group>"; };
+		764E278B1AA66B7900CCF010 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		764E278D1AA66B7900CCF010 /* EditTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTimerViewController.swift; sourceTree = "<group>"; };
+		764E278E1AA66B7900CCF010 /* EmptySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptySegue.swift; sourceTree = "<group>"; };
+		764E27901AA66B7900CCF010 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		764E27911AA66B7900CCF010 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		764E27931AA66B7900CCF010 /* MenuContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuContainerViewController.swift; sourceTree = "<group>"; };
+		764E27971AA66B7900CCF010 /* PressableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressableImageView.swift; sourceTree = "<group>"; };
+		764E279B1AA66B7900CCF010 /* RoomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableCell.swift; sourceTree = "<group>"; };
+		764E279C1AA66B7900CCF010 /* RotatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatedImageView.swift; sourceTree = "<group>"; };
+		764E27A31AA66B7900CCF010 /* SpeakerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerImageView.swift; sourceTree = "<group>"; };
+		764E27A81AA66B7900CCF010 /* SpeakerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewCell.swift; sourceTree = "<group>"; };
+		764E27AB1AA66B7900CCF010 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		764E27AC1AA66B7900CCF010 /* TimerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTableViewCell.swift; sourceTree = "<group>"; };
+		764E27AD1AA66B7900CCF010 /* TmpTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TmpTimer.swift; sourceTree = "<group>"; };
+		764E27EB1AA6770A00CCF010 /* PageApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PageApp.xcdatamodel; sourceTree = "<group>"; };
+		7664B58A1ABCB2BA0056EA78 /* StreamingActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingActivityView.swift; sourceTree = "<group>"; };
+		76A9ED281B0E5892008382D0 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		760D6F981AA66AC200448BC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7639056D1B4B8D3000951C02 /* libHKWirelessHDlw.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760D6FB01AA66AC300448BC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		760D6F921AA66AC200448BC4 = {
+			isa = PBXGroup;
+			children = (
+				760D6F9D1AA66AC200448BC4 /* HKTime */,
+				760D6FB61AA66AC300448BC4 /* HKTimeTests */,
+				760D6F9C1AA66AC200448BC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		760D6F9C1AA66AC200448BC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				760D6F9B1AA66AC200448BC4 /* HKTime.app */,
+				760D6FB31AA66AC300448BC4 /* HKTimeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		760D6F9D1AA66AC200448BC4 /* HKTime */ = {
+			isa = PBXGroup;
+			children = (
+				763905621B4B8D3000951C02 /* HKWirelessHDSDKlw */,
+				764E277E1AA66B7900CCF010 /* Classes */,
+				764E27EA1AA6770A00CCF010 /* HKTime.xcdatamodeld */,
+				762E26EB1AA9019F00204AD3 /* Main.storyboard */,
+				760D6FAA1AA66AC200448BC4 /* Images.xcassets */,
+				760D6FAC1AA66AC200448BC4 /* LaunchScreen.xib */,
+				760D6F9E1AA66AC200448BC4 /* Supporting Files */,
+			);
+			path = HKTime;
+			sourceTree = "<group>";
+		};
+		760D6F9E1AA66AC200448BC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				760D6F9F1AA66AC200448BC4 /* Info.plist */,
+				763EB6C81AA7E25F006CACBC /* MMPSilence.wav */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		760D6FB61AA66AC300448BC4 /* HKTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				760D6FB91AA66AC300448BC4 /* HKTimeTests.swift */,
+				760D6FB71AA66AC300448BC4 /* Supporting Files */,
+			);
+			path = HKTimeTests;
+			sourceTree = "<group>";
+		};
+		760D6FB71AA66AC300448BC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				760D6FB81AA66AC300448BC4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		763905621B4B8D3000951C02 /* HKWirelessHDSDKlw */ = {
+			isa = PBXGroup;
+			children = (
+				763905631B4B8D3000951C02 /* include */,
+				763905691B4B8D3000951C02 /* lib */,
+			);
+			path = HKWirelessHDSDKlw;
+			sourceTree = "<group>";
+		};
+		763905631B4B8D3000951C02 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				763905641B4B8D3000951C02 /* DeviceGroup.h */,
+				763905651B4B8D3000951C02 /* DeviceInfo.h */,
+				763905661B4B8D3000951C02 /* HKWControlHandler.h */,
+				763905671B4B8D3000951C02 /* HKWDeviceEventHandlerSingleton.h */,
+				763905681B4B8D3000951C02 /* HKWPlayerEventHandlerSingleton.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		763905691B4B8D3000951C02 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7639056A1B4B8D3000951C02 /* libHKWirelessHDlw.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		764E277E1AA66B7900CCF010 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				764E27E91AA66C6300CCF010 /* Model */,
+				764E27E81AA66BEE00CCF010 /* ViewController */,
+				764E27E71AA66BE300CCF010 /* TableViewCell */,
+				764E27801AA66B7900CCF010 /* AppDelegate.swift */,
+				764E27831AA66B7900CCF010 /* BlueTabButton.swift */,
+				764E27851AA66B7900CCF010 /* CoreDataHandler.swift */,
+				764E27861AA66B7900CCF010 /* CustomPickerView.swift */,
+				764E27871AA66B7900CCF010 /* CustomSwitch.swift */,
+				76A9ED281B0E5892008382D0 /* GlobalConstants.swift */,
+				7664B58A1ABCB2BA0056EA78 /* StreamingActivityView.swift */,
+				764E27891AA66B7900CCF010 /* CustomTextView.swift */,
+				764E278E1AA66B7900CCF010 /* EmptySegue.swift */,
+				764E27901AA66B7900CCF010 /* Helper.swift */,
+				764E27971AA66B7900CCF010 /* PressableImageView.swift */,
+				763EB6B11AA7D17E006CACBC /* MMPDeepSleepPreventer.h */,
+				763EB6B21AA7D17E006CACBC /* MMPDeepSleepPreventer.m */,
+				763EB6AE1AA7D0EF006CACBC /* SplashViewController.swift */,
+				764E279C1AA66B7900CCF010 /* RotatedImageView.swift */,
+				764E27A31AA66B7900CCF010 /* SpeakerImageView.swift */,
+				763EB6B01AA7D17D006CACBC /* HKTime-Bridging-Header.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		764E27E71AA66BE300CCF010 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				764E278A1AA66B7900CCF010 /* DeleteTableViewCell.swift */,
+				764E27A81AA66B7900CCF010 /* SpeakerTableViewCell.swift */,
+				762E26ED1AA9046800204AD3 /* TimeEditingTableViewCell.swift */,
+				763EB6CC1AA7E658006CACBC /* SpeakerTableCell.swift */,
+				764E279B1AA66B7900CCF010 /* RoomTableCell.swift */,
+				764E27AC1AA66B7900CCF010 /* TimerTableViewCell.swift */,
+				764E278B1AA66B7900CCF010 /* DetailsTableViewCell.swift */,
+				764E27881AA66B7900CCF010 /* CustomTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		764E27E81AA66BEE00CCF010 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				764E27821AA66B7900CCF010 /* BlankSpeakerListViewController.swift */,
+				763EB6B61AA7D757006CACBC /* EditSpeakerViewController.swift */,
+				764E278D1AA66B7900CCF010 /* EditTimerViewController.swift */,
+				764E27911AA66B7900CCF010 /* HomeViewController.swift */,
+				764E27931AA66B7900CCF010 /* MenuContainerViewController.swift */,
+				763EB6CA1AA7E483006CACBC /* MenuViewController.swift */,
+				763EB6BA1AA7D8B4006CACBC /* RoomListViewController.swift */,
+				763EB6C01AA7DACF006CACBC /* RoomSelectionTableViewCell.swift */,
+				763EB6CE1AA83096006CACBC /* AboutViewController.swift */,
+				763EB6C61AA7DBCC006CACBC /* SearchingViewController.swift */,
+				762E26EF1AAA887700204AD3 /* RadarSearchingViewController.swift */,
+				763EB6B81AA7D868006CACBC /* SelectRoomViewController.swift */,
+				763EB6BC1AA7DA0A006CACBC /* SpeakerListContainerViewController.swift */,
+				763EB6C21AA7DB7B006CACBC /* SpeakerListTabViewController.swift */,
+				763EB6BE1AA7DA53006CACBC /* SpeakerListViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		764E27E91AA66C6300CCF010 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				764E27AD1AA66B7900CCF010 /* TmpTimer.swift */,
+				764E27AB1AA66B7900CCF010 /* Timer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		760D6F9A1AA66AC200448BC4 /* HKTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760D6FBD1AA66AC300448BC4 /* Build configuration list for PBXNativeTarget "HKTime" */;
+			buildPhases = (
+				760D6F971AA66AC200448BC4 /* Sources */,
+				760D6F981AA66AC200448BC4 /* Frameworks */,
+				760D6F991AA66AC200448BC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKTime;
+			productName = HKTime;
+			productReference = 760D6F9B1AA66AC200448BC4 /* HKTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		760D6FB21AA66AC300448BC4 /* HKTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760D6FC01AA66AC300448BC4 /* Build configuration list for PBXNativeTarget "HKTimeTests" */;
+			buildPhases = (
+				760D6FAF1AA66AC300448BC4 /* Sources */,
+				760D6FB01AA66AC300448BC4 /* Frameworks */,
+				760D6FB11AA66AC300448BC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				760D6FB51AA66AC300448BC4 /* PBXTargetDependency */,
+			);
+			name = HKTimeTests;
+			productName = HKTimeTests;
+			productReference = 760D6FB31AA66AC300448BC4 /* HKTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		760D6F931AA66AC200448BC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Harman International";
+				TargetAttributes = {
+					760D6F9A1AA66AC200448BC4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					760D6FB21AA66AC300448BC4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 760D6F9A1AA66AC200448BC4;
+					};
+				};
+			};
+			buildConfigurationList = 760D6F961AA66AC200448BC4 /* Build configuration list for PBXProject "HKTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 760D6F921AA66AC200448BC4;
+			productRefGroup = 760D6F9C1AA66AC200448BC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				760D6F9A1AA66AC200448BC4 /* HKTime */,
+				760D6FB21AA66AC300448BC4 /* HKTimeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		760D6F991AA66AC200448BC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760D6FAE1AA66AC200448BC4 /* LaunchScreen.xib in Resources */,
+				760D6FAB1AA66AC200448BC4 /* Images.xcassets in Resources */,
+				763EB6C91AA7E25F006CACBC /* MMPSilence.wav in Resources */,
+				762E26EC1AA9019F00204AD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760D6FB11AA66AC300448BC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		760D6F971AA66AC200448BC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764E27B41AA66B7900CCF010 /* AppDelegate.swift in Sources */,
+				764E27C71AA66B7900CCF010 /* MenuContainerViewController.swift in Sources */,
+				763EB6C11AA7DACF006CACBC /* RoomSelectionTableViewCell.swift in Sources */,
+				764E27C21AA66B7900CCF010 /* EmptySegue.swift in Sources */,
+				764E27B91AA66B7900CCF010 /* CoreDataHandler.swift in Sources */,
+				764E27BD1AA66B7900CCF010 /* CustomTextView.swift in Sources */,
+				764E27CF1AA66B7900CCF010 /* RoomTableCell.swift in Sources */,
+				764E27BC1AA66B7900CCF010 /* CustomTableViewCell.swift in Sources */,
+				764E27EC1AA6770A00CCF010 /* HKTime.xcdatamodeld in Sources */,
+				764E27D01AA66B7900CCF010 /* RotatedImageView.swift in Sources */,
+				763EB6AF1AA7D0EF006CACBC /* SplashViewController.swift in Sources */,
+				764E27BB1AA66B7900CCF010 /* CustomSwitch.swift in Sources */,
+				763EB6B31AA7D17E006CACBC /* MMPDeepSleepPreventer.m in Sources */,
+				76A9ED291B0E5892008382D0 /* GlobalConstants.swift in Sources */,
+				763EB6CB1AA7E483006CACBC /* MenuViewController.swift in Sources */,
+				764E27BE1AA66B7900CCF010 /* DeleteTableViewCell.swift in Sources */,
+				763EB6B91AA7D868006CACBC /* SelectRoomViewController.swift in Sources */,
+				763EB6BB1AA7D8B4006CACBC /* RoomListViewController.swift in Sources */,
+				764E27DC1AA66B7900CCF010 /* SpeakerTableViewCell.swift in Sources */,
+				764E27BF1AA66B7900CCF010 /* DetailsTableViewCell.swift in Sources */,
+				763EB6C31AA7DB7B006CACBC /* SpeakerListTabViewController.swift in Sources */,
+				764E27C41AA66B7900CCF010 /* Helper.swift in Sources */,
+				763EB6B71AA7D757006CACBC /* EditSpeakerViewController.swift in Sources */,
+				763EB6CF1AA83096006CACBC /* AboutViewController.swift in Sources */,
+				764E27E01AA66B7900CCF010 /* TimerTableViewCell.swift in Sources */,
+				763EB6CD1AA7E658006CACBC /* SpeakerTableCell.swift in Sources */,
+				762E26F01AAA887700204AD3 /* RadarSearchingViewController.swift in Sources */,
+				7664B58B1ABCB2BA0056EA78 /* StreamingActivityView.swift in Sources */,
+				763EB6C71AA7DBCC006CACBC /* SearchingViewController.swift in Sources */,
+				763EB6BF1AA7DA53006CACBC /* SpeakerListViewController.swift in Sources */,
+				764E27E11AA66B7900CCF010 /* TmpTimer.swift in Sources */,
+				764E27C51AA66B7900CCF010 /* HomeViewController.swift in Sources */,
+				763EB6BD1AA7DA0A006CACBC /* SpeakerListContainerViewController.swift in Sources */,
+				762E26EE1AA9046800204AD3 /* TimeEditingTableViewCell.swift in Sources */,
+				764E27BA1AA66B7900CCF010 /* CustomPickerView.swift in Sources */,
+				764E27B61AA66B7900CCF010 /* BlankSpeakerListViewController.swift in Sources */,
+				764E27C11AA66B7900CCF010 /* EditTimerViewController.swift in Sources */,
+				764E27B71AA66B7900CCF010 /* BlueTabButton.swift in Sources */,
+				764E27CB1AA66B7900CCF010 /* PressableImageView.swift in Sources */,
+				764E27D71AA66B7900CCF010 /* SpeakerImageView.swift in Sources */,
+				764E27DF1AA66B7900CCF010 /* Timer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760D6FAF1AA66AC300448BC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760D6FBA1AA66AC300448BC4 /* HKTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		760D6FB51AA66AC300448BC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 760D6F9A1AA66AC200448BC4 /* HKTime */;
+			targetProxy = 760D6FB41AA66AC300448BC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		760D6FAC1AA66AC200448BC4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760D6FAD1AA66AC200448BC4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		760D6FBB1AA66AC300448BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		760D6FBC1AA66AC300448BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		760D6FBE1AA66AC300448BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = HKTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/HKTime/HKWirelessHDSDKlw/include",
+					"$(PROJECT_DIR)/HKTime/HKWirelessHDSDKlw/lib",
+				);
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HKTime/Classes/HKTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		760D6FBF1AA66AC300448BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = HKTime/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/HKTime/HKWirelessHDSDKlw/include",
+					"$(PROJECT_DIR)/HKTime/HKWirelessHDSDKlw/lib",
+				);
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HKTime/Classes/HKTime-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		760D6FC11AA66AC300448BC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HKTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKTime.app/HKTime";
+			};
+			name = Debug;
+		};
+		760D6FC21AA66AC300448BC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HKTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HKTime.app/HKTime";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		760D6F961AA66AC200448BC4 /* Build configuration list for PBXProject "HKTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760D6FBB1AA66AC300448BC4 /* Debug */,
+				760D6FBC1AA66AC300448BC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760D6FBD1AA66AC300448BC4 /* Build configuration list for PBXNativeTarget "HKTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760D6FBE1AA66AC300448BC4 /* Debug */,
+				760D6FBF1AA66AC300448BC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760D6FC01AA66AC300448BC4 /* Build configuration list for PBXNativeTarget "HKTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760D6FC11AA66AC300448BC4 /* Debug */,
+				760D6FC21AA66AC300448BC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		764E27EA1AA6770A00CCF010 /* HKTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				764E27EB1AA6770A00CCF010 /* PageApp.xcdatamodel */,
+			);
+			currentVersion = 764E27EB1AA6770A00CCF010 /* PageApp.xcdatamodel */;
+			path = HKTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 760D6F931AA66AC200448BC4 /* Project object */;
+}

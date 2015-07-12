@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Model" representedClassName="Model" syncable="YES">
+        <attribute name="iconName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="speakers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Speaker" inverseName="model" inverseEntity="Speaker" syncable="YES"/>
+    </entity>
+    <entity name="Note" syncable="YES">
+        <attribute name="deviceid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Room" representedClassName="Room" syncable="YES">
+        <attribute name="broadcast" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="iconName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="speakers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Speaker" inverseName="room" inverseEntity="Speaker" syncable="YES"/>
+    </entity>
+    <entity name="Speaker" representedClassName="Speaker" syncable="YES">
+        <attribute name="broadcast" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="model" maxCount="1" deletionRule="Nullify" destinationEntity="Model" inverseName="speakers" inverseEntity="Model" syncable="YES"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Room" inverseName="speakers" inverseEntity="Room" syncable="YES"/>
+        <relationship name="speakerZone" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Zone" inverseName="speakers" inverseEntity="Zone" syncable="YES"/>
+    </entity>
+    <entity name="Zone" representedClassName="Zone" syncable="YES">
+        <attribute name="iconName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="speakers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Speaker" inverseName="speakerZone" inverseEntity="Speaker" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Model" positionX="-54" positionY="36" width="128" height="103"/>
+        <element name="Room" positionX="-18" positionY="54" width="128" height="118"/>
+        <element name="Speaker" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Zone" positionX="-36" positionY="45" width="128" height="103"/>
+        <element name="Note" positionX="-45" positionY="63" width="128" height="75"/>
+    </elements>
+</model>
